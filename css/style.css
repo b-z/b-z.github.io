@@ -1,0 +1,63 @@
+﻿div#head
+{
+	position:relative;
+	margin:auto;
+	width:780px;
+}
+div#title
+{
+	height:170px;
+}
+div#hori-bar
+{
+	position:absolute;
+	top:125px;
+	left:345px;
+}
+div#navbar
+{
+	position:absolute;
+	right:12px;
+	top:12px;
+}
+div#maintext
+{
+	background:white;
+	width:780px;
+}
+div#flash{padding-top:0px;padding-bottom:30px;background:white;}
+div#main
+{
+	margin:auto;
+	width:780px;
+}
+div#but1
+{
+	float:right;
+}
+div#but2
+{
+	float:right;
+}
+div#but3
+{
+	float:right;
+}
+div#but4
+{
+	float:right;
+}
+div#foot
+{
+	background:#93be1d;
+	color:#C0D988;
+	text-align:right;
+}
+	
+body,td,th {
+	font-family: "华文细黑";
+	color:#888;
+}
+p{
+	margin:0px;
+}
