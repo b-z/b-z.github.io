@@ -25,7 +25,7 @@ div#maintext
 	background:white;
 	width:780px;
 }
-div#flash{padding-top:0px;padding-bottom:30px;background:white;}
+div#flash{padding-top:0px;padding-bottom:300px;background:white;}
 div#main
 {
 	margin:auto;
@@ -53,10 +53,138 @@ div#foot
 	color:#C0D988;
 	text-align:right;
 }
+div#blogleft
+{
+	border-right-color:#cccccc;
+	border-right-width: 1px;
+	border-right-style: solid;
+	width:420px;
+	float:left;
+	padding-right:10px;
 	
+}
+div#aboutme1
+{
+	margin-left:40px;
+	border-left-color:#93be1d;
+	border-left-width: 3px;
+	border-left-style: solid;
+	margin-bottom:10px;
+	font-size:24px;
+}
+div#blogright
+{
+	width:230px;
+	margin-top:180px;
+	padding-bottom:60px;
+	padding-top:0px;
+	padding-left:20px;
+	padding-right:0px;
+	float:left;
+}
+div#clearfix{clear:both;height:0px;}
+div#blog
+{
+	line-height: 175%;
+	margin-top: 78px;
+	margin-bottom: 40px;
+}
+div#date
+{
+	font-family: Georgia, sans-serif;
+	display: block;
+	float: left;
+	margin-top: 0.25em;
+	margin-right: 1em;
+	margin-bottom: 0px;
+	margin-left: 1em;
+	line-height: 16px;
+}
+div#category
+{
+	background: #93BE1D;
+	color: #FFF;
+	display: block;
+	margin-right: 10px;
+	padding-left:10px;
+	padding-right: 30px;
+	border: 0px;
+	float:right;
+}
+div#blogmain
+{
+	background:white;
+}
+.blogtitle
+{
+	display: block;
+	border-left-color:#93be1d;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-bottom-color:#cccccc;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0.5em;
+	margin-top: 0px;
+	margin-right: -0.06em;
+	margin-bottom: 0.5em;
+	margin-left: 0.15em;
+	clear: both;
+	font-size: 138%;
+	font-weight: Normal;
+	line-height: 150%;
+	letter-spacing: -0.06em;
+}
+div#blogcontent
+{
+	background:white;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 0px;
+	padding-left: 60px;
+}
+div#all
+{
+	width: 780px;
+	text-align: left;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 20px;
+}
+h2
+{
+	margin: 0px;
+	padding: 0px;
+	line-height: 1em;
+	font-size: 100%;
+}
+.blogimg
+{
+	width: 412px;
+	margin-top: 0.5em;
+	margin-right: auto;
+	padding-top: 2px;
+	border-top-color: rgb(221, 221, 221);
+	border-top-style: solid;
+	border-top-width: 2px;
+}
+div#readmore
+{
+	display: block;
+	padding-right: 20px;
+	margin-top: -1em;
+	float: right;
+	text-align: right;
+	color: #93BE1D;
+	font-family: Georgia, sans-serif;
+}
 body,td,th {
-	font-family: "华文细黑";
-	color:#888;
+	font-family: "华文细黑",STHeiti Light,STXihei;
+	color: #888;
 }
 p{
 	margin:0px;
