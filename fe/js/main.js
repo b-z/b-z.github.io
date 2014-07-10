@@ -1,10 +1,15 @@
 var p;
+var now=0;
+var settime=true;
+var timer;
 var datasrc="/fe/data/news.json"; 
+
 q=$.getJSON(datasrc, function(data){ 
 p=data;
 printJSON(p);
 addInfo(p);
 addImg(p);
+timer=setInterval(function(){moveright();},1000);
 }); 
 //p:获取来的json对象
 //q:get到的信息
@@ -20,7 +25,7 @@ function printJSON(p)//打印JSON信息
 		'font-family: \'Arial\',\'华文细黑\';'+
 		'background:#f2f2f2;'+
 		'color:#666;'+
-		'width:632px;'+
+		'width:634px;'+
 		'">'+
 		'<h3><b>JSONdata:</b></h3>';
 	for (var i in p)
@@ -57,28 +62,29 @@ function addImg(p)
 		'position:fixed;'+
 		//'float:left;'+
 		'">';
-	for (var i=0;i<p.num;i++)
+	for (var i=p.num-1;i>=0;i--)
 	{
 		imgArea+='<div style="'+
+		'position:absolute;'+
 		'height:420px;'+
 	//	'opacity:0;'+
 		//'float:left;'+
 		//'-webkit-transform: translateX('+
 		//0+//400*(+i)+
 		//'px);"'+
-		'"><img id="pic'+i+'" src="'+
+		'"><img class="pic'+i+'" src="'+
 		p.images[i].url+
 		'" width=654px height=420px></div>';
 	}
 	imgArea+='</div>';
 	imgArea+=
-	'<div style="position:fixed;top:191px;left:29px;height:100px;background:#666;opacity:0.8;"></div><img src="img/arrow-left.png"></div>'+
-	'<div style="position:fixed;top:191px;left:652px;height:100px;background:#666;opacity:0.8;"><img src="img/arrow-right.png"></div>';
+	'<div class="arrow" style="position:fixed;top:191px;left:29px;height:100px;background:#f2f2f2;opacity:0;border-bottom-right-radius: 7px;border-top-right-radius: 7px;"><img id="left-arrow" class="arrow" src="img/arrow-left.png"></div>'+
+	'<div class="arrow" style="position:fixed;top:191px;left:652px;height:100px;background:#f2f2f2;opacity:0;border-bottom-left-radius: 7px;border-top-left-radius: 7px;"><img id="right-arrow" class="arrow" src="img/arrow-right.png"></div>';
 	$('body').prepend(imgArea);
 }
 function addInfo(p)
 {
-	var info='<div id="infoArea" style="'+
+	var info='<div id="infoArea" class="info" style="'+
 		'box-shadow: 5px 5px 14px #888888;'+
 		//'border-top-right-radius: 9px;'+
 	//	'border-bottom-right-radius: 5px;'+
@@ -94,11 +100,15 @@ function addInfo(p)
 	'">';
 	for (var i=0;i<p.num;i++)
 	{
-		info+='<div style="'+
+		info+='<div class="info" id="info'+
+		i+
+		'" style="'+
 		'margin-top:17px;'+
 		'margin-left:5px;'+
 		'margin-right:5px;'+
+		'position:absolute;'+
 		'color:#666;'+
+		//(i?'visibility:hidden;':'visibility:visible;')+
 		'height:140px;'+
 		'font-family: \'华文细黑\';'+
 		'-webkit-transform: translateY('+
@@ -106,9 +116,9 @@ function addInfo(p)
 		'px);"'+
 		'">'+
 		
-		'<div style="height:24px;"><b>'+
+		'<div class="info" style="height:24px;"><b class="info">'+
 		p.images[i].title+
-		'</b></div><div style="height:110px;"><p>　　'+
+		'</b></div><div class="info" style="height:110px;"><p class="info">　　'+
 		p.images[i].contents+
 		'</p></div>'+
 		'</div>';
@@ -116,11 +126,96 @@ function addInfo(p)
 	info+='</div>';
 	info+='<div style="height:460px"></div>';
 	$('body').prepend(info);
+	for (var i=1;i<6;i++)
+		$('#info'+i).fadeOut(0);
 }
+/*
+@-webkit-keyframes awareru
+{
+from {opacity: 0;}
+to {opacity: 1;}
+}
+@-webkit-keyframes kieru
+{
+from {opacity: 1;}
+to {opacity: 0;}
+}
+*/
 function moveleft()
 {
+	console.log(now);
+	$('#info'+now).fadeOut('slow');
+	if (now>0)
+	{
+		$('.pic'+(now-1)).fadeIn('slow');
+		now--;
+	}
+	else
+	{
+		now=5;
+		for (i=0;i<5;i++) 
+		{
+			$('.pic'+i).fadeOut('slow');
+		}
+	}
+	$('#info'+now).fadeIn('slow');
 }
 function moveright()
 {
+	console.log(now);
+	$('#info'+now).fadeOut('slow');
+	if (now<5)
+	{
+		$('.pic'+now).fadeOut('slow');
+		now++;
+	}
+	else
+	{
+		now=0;
+		for (i=0;i<5;i++) 
+		{
+			$('.pic'+i).fadeIn('slow');
+		}
+	}
+	$('#info'+now).fadeIn('slow');
 }
+document.addEventListener('click',function(c)
+{
+	//console.log(c);
+	if ((c.target).className=='arrow')
+	{
+		if ((c.target).id=='left-arrow')
+		{
+			moveleft();
+		}
+		else 
+		{
+			moveright();
+		}
+	}
+});
+document.addEventListener('mouseover',function(d)
+{	
+	if (settime&&(d.target.className=='info'||d.target.className=='arrow'))
+	{
+		settime=false;
+		clearInterval(timer);
+	}
+	if (!settime&&(d.target.className!='info'&&d.target.className!='arrow'))
+	{
+		settime=true;
+		timer=setInterval(function(){moveright();},1000);
+	}
+});
+function min(a,b){return a<b?a:b;}
+function max(a,b){return a>b?a:b;}
+function dis(x1,y1,x2,y2){return (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);}
 
+document.addEventListener('mousemove',function(e)
+{	//30,240,684,240
+	var x=e.x;
+	var y=e.y;
+	var d1=dis(x,y,30,240);
+	var d2=dis(x,y,684,240);
+	$('.arrow').css('opacity',max(0,(100000-min(d1,d2))/150000));
+});
