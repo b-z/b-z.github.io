@@ -2,7 +2,7 @@ var p;
 var now=0;
 var settime=true;
 var timer;
-var datasrc="/fe/data/news.json"; 
+var datasrc="data/news.json"; 
 var t=3500;//设置时间间隔
 q=$.getJSON(datasrc, function(data){ 
 p=data;
@@ -233,7 +233,7 @@ function max(a,b){return a>b?a:b;}
 function dis(x1,y1,x2,y2){return (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);}
 
 document.addEventListener('mousemove',function(e)
-{	//30,240,684,240
+{	
 	var x=e.x;
 	var y=e.y;
 	var d1=dis(x,y,30,240);
@@ -241,3 +241,42 @@ document.addEventListener('mousemove',function(e)
 	$('#right-arrow').css('opacity',max(0,(100000-d2)/150000));
 	$('#left-arrow').css('opacity',max(0,(100000-d1)/150000));
 });
+
+/**************************************上面是图片部分，下面是评论部分*******************************************/
+
+var s;//s:评论
+$.getJSON('data/comment.json', function(data){ 
+	s=data;
+	addComment(s);
+});
+
+function addComment(s)
+{
+	var commentArea='';
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
