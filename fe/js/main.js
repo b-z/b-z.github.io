@@ -26,6 +26,7 @@ function printJSON(p)//打印JSON信息
 		'background:#eee;'+
 		'color:#666;'+
 		'width:634px;'+
+		'float:left;'+
 		'">'+
 		'<h3><b>JSONdata:</b></h3>';
 	for (var i in p)
@@ -161,7 +162,7 @@ function moveleft()
 }
 function moveright()
 {
-	console.log(now);
+	//console.log(now);
 	$('#info'+now).fadeOut('slow');
 	if (now<5)
 	{
@@ -252,15 +253,45 @@ $('body').prepend('<div id="commentArea" style="'+
 'border-left:2px solid #3F3;'+
 'font-family: \'Arial\',\'华文细黑\';'+
 'background:#eee;'+
-'color:#666;'+		
-'"></div>');
+'color:#666;'+
+'position:absolute;'+		
+'top:10px;'+
+'margin-top:20px'+
+'"><h3><b>Comments</b></h3><hr align="center"><div id=comment></div></div>');
 
-
-function comment(t)//t:number
+var s;
+var u=0;
+function comment(u)//t:number
 {
-
+	$.getJSON('data/comment'+u+'.json', function(data){ 
+	s=data;
+	addComment(s);
+});
 }
 
+function addComment(s)
+{
+	$('#comment')[0].innerHTML='';
+	var comment='';
+	for (var i=0;i<30;i++)
+	{
+		comment+='<div>'+
+		'<b style="color:#030">'+(+i+1)+'楼: 花花</b>'+
+		'<p align="right" style="font-size:12px;">2014/07/10 星期四 22:02</p>'+
+		'<p style="font-size:18px;">'+randomComment(s)+
+		'</p><hr></div>';
+	}
+}
+
+function randomComment(s)
+{
+	var r=[];
+	for (var i=0;i<4;i++)
+	{
+		r.push(Math.floor(Math.random()*s.num[i]));
+	}
+	return s.subject[r[0]]+s.predicate[r[1]]+s.object[r[2]]+s.kaomoji[r[3]];
+}
 
 
 
@@ -279,26 +310,3 @@ function addComment(s)
 }
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
