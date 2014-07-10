@@ -46,11 +46,11 @@ function addImg(p)
 {
 	var imgArea='<div id="imgArea" style="'+
 		'box-shadow: 5px 5px 14px #888888;'+
-	//	'border-top-left-radius: 5px;'+
-		'border-bottom-left-radius: 9px;'+
+		'border-radius: 7px;'+
+	//	'border-bottom-left-radius: 9px;'+
 		'border:1px solid #F3F3F3;'+
 		'overflow:hidden;'+
-		'width:600px;'+
+		'width:654px;'+
 		'height:420px;'+
 		'margin-left:20px;'+
 		'margin-top:20px;'+
@@ -68,42 +68,45 @@ function addImg(p)
 		//'px);"'+
 		'"><img id="pic'+i+'" src="'+
 		p.images[i].url+
-		'" width=600px height=420px></div>';
+		'" width=654px height=420px></div>';
 	}
 	imgArea+='</div>';
-	imgArea+='<div><img src="img/arrow-left.png"></div><div><img src="img/arrow-right.png"></div>'
+	imgArea+=
+	'<div style="position:fixed;top:191px;left:29px;height:100px;background:#666;opacity:0.8;"></div><img src="img/arrow-left.png"></div>'+
+	'<div style="position:fixed;top:191px;left:652px;height:100px;background:#666;opacity:0.8;"><img src="img/arrow-right.png"></div>';
 	$('body').prepend(imgArea);
 }
 function addInfo(p)
 {
 	var info='<div id="infoArea" style="'+
 		'box-shadow: 5px 5px 14px #888888;'+
-		'border-top-right-radius: 9px;'+
+		//'border-top-right-radius: 9px;'+
 	//	'border-bottom-right-radius: 5px;'+
 		'overflow:hidden;'+
 		'background:#f2f2f2;'+
 		'border:1px solid #F3F3F3;'+
 		'position:fixed;'+
-		'width:247px;'+
-		'height:280px;'+
-		'left:433px;'+
-		'margin-top:20px;'+
+		'width:447px;'+
+		'height:130px;'+
+		'left:223px;'+
+		'margin-top:297px;'+
+		'opacity:0.8;'+
 	'">';
 	for (var i=0;i<p.num;i++)
 	{
 		info+='<div style="'+
-		'margin-top:30px;'+
+		'margin-top:17px;'+
 		'margin-left:5px;'+
 		'margin-right:5px;'+
 		'color:#666;'+
-		'height:250px;'+
+		'height:140px;'+
 		'font-family: \'华文细黑\';'+
 		'-webkit-transform: translateY('+
 		0+//400*(+i)+
 		'px);"'+
 		'">'+
 		
-		'<div style="height:44px;"><b>'+
+		'<div style="height:24px;"><b>'+
 		p.images[i].title+
 		'</b></div><div style="height:110px;"><p>　　'+
 		p.images[i].contents+
