@@ -3,13 +3,13 @@ var now=0;
 var settime=true;
 var timer;
 var datasrc="/fe/data/news.json"; 
-
+var t=1000;//设置时间间隔
 q=$.getJSON(datasrc, function(data){ 
 p=data;
 printJSON(p);
 addInfo(p);
 addImg(p);
-timer=setInterval(function(){moveright();},1000);
+timer=setInterval(function(){moveright();},t);
 }); 
 //p:获取来的json对象
 //q:get到的信息
@@ -23,7 +23,7 @@ function printJSON(p)//打印JSON信息
 		'padding:10px;'+
 		'border-left:2px solid #3F3;'+
 		'font-family: \'Arial\',\'华文细黑\';'+
-		'background:#f2f2f2;'+
+		'background:#eee;'+
 		'color:#666;'+
 		'width:634px;'+
 		'">'+
@@ -53,7 +53,7 @@ function addImg(p)
 		'box-shadow: 5px 5px 14px #888888;'+
 		'border-radius: 7px;'+
 	//	'border-bottom-left-radius: 9px;'+
-		'border:1px solid #F3F3F3;'+
+		'border:1px solid #eee;'+
 		'overflow:hidden;'+
 		'width:654px;'+
 		'height:420px;'+
@@ -78,8 +78,8 @@ function addImg(p)
 	}
 	imgArea+='</div>';
 	imgArea+=
-	'<div class="arrow" style="position:fixed;top:191px;left:29px;height:100px;background:#f2f2f2;opacity:0;border-bottom-right-radius: 7px;border-top-right-radius: 7px;"><img id="left-arrow" class="arrow" src="img/arrow-left.png"></div>'+
-	'<div class="arrow" style="position:fixed;top:191px;left:652px;height:100px;background:#f2f2f2;opacity:0;border-bottom-left-radius: 7px;border-top-left-radius: 7px;"><img id="right-arrow" class="arrow" src="img/arrow-right.png"></div>';
+	'<div class="arrow" style="position:fixed;top:191px;left:29px;height:100px;background:#eee;opacity:0;border-bottom-right-radius: 7px;border-top-right-radius: 7px;"><img id="left-arrow" class="arrow" src="img/arrow-left.png"></div>'+
+	'<div class="arrow" style="position:fixed;top:191px;left:652px;height:100px;background:#eee;opacity:0;border-bottom-left-radius: 7px;border-top-left-radius: 7px;"><img id="right-arrow" class="arrow" src="img/arrow-right.png"></div>';
 	$('body').prepend(imgArea);
 }
 function addInfo(p)
@@ -89,14 +89,13 @@ function addInfo(p)
 		//'border-top-right-radius: 9px;'+
 	//	'border-bottom-right-radius: 5px;'+
 		'overflow:hidden;'+
-		'background:#f2f2f2;'+
-		'border:1px solid #F3F3F3;'+
+		'background:#eee;'+
 		'position:fixed;'+
 		'width:447px;'+
 		'height:130px;'+
 		'left:223px;'+
 		'margin-top:297px;'+
-		'opacity:0.8;'+
+		'opacity:0.4;'+
 	'">';
 	for (var i=0;i<p.num;i++)
 	{
@@ -193,6 +192,10 @@ document.addEventListener('click',function(c)
 			moveright();
 		}
 	}
+	if (c.target.className=='info')
+	{
+		window.open(p.images[now].details);
+	}
 });
 document.addEventListener('mouseover',function(d)
 {	
@@ -204,7 +207,15 @@ document.addEventListener('mouseover',function(d)
 	if (!settime&&(d.target.className!='info'&&d.target.className!='arrow'))
 	{
 		settime=true;
-		timer=setInterval(function(){moveright();},1000);
+		timer=setInterval(function(){moveright();},t);
+	}
+	if (d.target.className=='info'd.target.className=='arrow')
+	{
+		$('#infoArea').css('opacity',0.8);
+	}
+	else
+	{
+		$('#infoArea').css('opacity',0.4);
 	}
 });
 function min(a,b){return a<b?a:b;}
