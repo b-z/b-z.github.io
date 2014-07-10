@@ -273,16 +273,16 @@ function addComment(s)
 {
 	console.log(s);
 	$('#comment')[0].innerHTML='';
-	var comment='';
+	var c='';
 	for (var i=0;i<30;i++)
 	{
-		comment+='<div>'+
+		c+='<div>'+
 		'<b style="color:#050">'+(+i+1)+'楼: 花花 说</b>'+
-		'<p align="right" style="font-size:12px;">2014/07/10 星期四 22:02</p>'+
+		'<span align="right" style="font-size:12px;">　　　　　2014/07/10 星期四 22:02</span>'+
 		'<p style="font-size:18px;">　　'+randomComment(s)+
 		'</p><hr></div>';
 	}
-	$('#comment')[0].innerHTML=comment;
+	$('#comment')[0].innerHTML=c;
 }
 
 function randomComment(s)
@@ -295,20 +295,4 @@ function randomComment(s)
 	return s.subject[r[0]]+s['predicate'][r[1]]+s['object'][r[2]]+s.kaomoji[r[3]];
 }
 
-comment(0);
-
-
-/*
-var s;//s:评论
-$.getJSON('data/comment0.json', function(data){ 
-	s=data;
-	addComment(s);
-});
-
-function addComment(s)
-{
-	var commentArea='';
-	
-}
-
-*/
+comment(1);
