@@ -1,5 +1,5 @@
 var p;
-var datasrc="/fe/news.json"; 
+var datasrc="/fe/data/news.json"; 
 q=$.getJSON(datasrc, function(data){ 
 p=data;
 printJSON(p);
@@ -71,7 +71,7 @@ function addImg(p)
 		'" width=600px height=420px></div>';
 	}
 	imgArea+='</div>';
-	
+	imgArea+='<div><img src="img/arrow-left.png"></div><div><img src="img/arrow-right.png"></div>'
 	$('body').prepend(imgArea);
 }
 function addInfo(p)
