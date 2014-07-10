@@ -4,6 +4,7 @@ var settime=true;
 var timer;
 var datasrc="data/news.json"; 
 var t=3500;//设置时间间隔
+$('body')[0].innerHTML='';
 q=$.getJSON(datasrc, function(data){ 
 p=data;
 printJSON(p);
@@ -260,8 +261,7 @@ $('body').prepend('<div id="commentArea" style="'+
 '"><h3><b>Comments</b></h3><hr align="center"><div id=comment></div></div>');
 
 var s;
-var u=1;
-function comment(u)//t:number
+function comment(u)//u:number
 {
 	$.getJSON('data/comment'+u+'.json', function(data){ 
 	s=data;
@@ -271,16 +271,18 @@ function comment(u)//t:number
 
 function addComment(s)
 {
+	console.log(s);
 	$('#comment')[0].innerHTML='';
 	var comment='';
 	for (var i=0;i<30;i++)
 	{
 		comment+='<div>'+
-		'<b style="color:#030">'+(+i+1)+'楼: 花花</b>'+
+		'<b style="color:#050">'+(+i+1)+'楼: 花花 说</b>'+
 		'<p align="right" style="font-size:12px;">2014/07/10 星期四 22:02</p>'+
-		'<p style="font-size:18px;">'+randomComment(s)+
+		'<p style="font-size:18px;">　　'+randomComment(s)+
 		'</p><hr></div>';
 	}
+	$('#comment')[0].innerHTML=comment;
 }
 
 function randomComment(s)
@@ -293,7 +295,7 @@ function randomComment(s)
 	return s.subject[r[0]]+s['predicate'][r[1]]+s['object'][r[2]]+s.kaomoji[r[3]];
 }
 
-
+comment(0);
 
 
 /*

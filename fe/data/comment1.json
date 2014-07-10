@@ -1,7 +1,7 @@
 {
 	"num":[1,1,2,13],
 	"subject":["花花"],
-	"predict":["爱吃"],
+	"predicate":["爱吃"],
 	"object":["爆米花","巧克力"],
 	"kaomoji":[
 	"(._.)",
