@@ -244,8 +244,30 @@ document.addEventListener('mousemove',function(e)
 
 /**************************************上面是图片部分，下面是评论部分*******************************************/
 
+$('body').prepend('<div id="commentArea" style="'+
+'left:700px;'+
+'width:500px;'+
+'box-shadow: 5px 5px 14px #888888;'+
+'border-radius: 0px;'+
+'border-left:2px solid #3F3;'+
+'font-family: \'Arial\',\'华文细黑\';'+
+'background:#eee;'+
+'color:#666;'+		
+'"></div>');
+
+
+function comment(t)//t:number
+{
+
+}
+
+
+
+
+
+/*
 var s;//s:评论
-$.getJSON('data/comment.json', function(data){ 
+$.getJSON('data/comment0.json', function(data){ 
 	s=data;
 	addComment(s);
 });
@@ -256,7 +278,7 @@ function addComment(s)
 	
 }
 
-
+*/
 
 
 
