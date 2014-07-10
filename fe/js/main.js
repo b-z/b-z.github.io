@@ -260,7 +260,7 @@ $('body').prepend('<div id="commentArea" style="'+
 '"><h3><b>Comments</b></h3><hr align="center"><div id=comment></div></div>');
 
 var s;
-var u=0;
+var u=1;
 function comment(u)//t:number
 {
 	$.getJSON('data/comment'+u+'.json', function(data){ 
@@ -290,7 +290,7 @@ function randomComment(s)
 	{
 		r.push(Math.floor(Math.random()*s.num[i]));
 	}
-	return s.subject[r[0]]+s.predicate[r[1]]+s.object[r[2]]+s.kaomoji[r[3]];
+	return s.subject[r[0]]+s['predicate'][r[1]]+s['object'][r[2]]+s.kaomoji[r[3]];
 }
 
 

@@ -68,8 +68,8 @@
 "曹仟根",
 "表昌勋"
 ],
-	"predicate":"喜欢",
-	"object":"Web前端课",
+	"predicate":["喜欢"],
+	"object":["Web前端课"],
 	"kaomoji":[
 	"(._.)",
 	"(´・ω・`)",
