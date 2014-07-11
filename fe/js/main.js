@@ -198,18 +198,26 @@ document.addEventListener('click',function(c)
 	{
 		window.open(p.images[now].details);
 	}
-	if (c.target.id='rbutton')
+	if (c.target.id=='rbutton')
 	{
 		if (page<2)
 		{
 			comment(++page);
 		}
+		else
+		{
+			alert('已经是最后一页了(´・ω・｀)');
+		}
 	}
-	if (c.target.id='lbutton')
+	if (c.target.id=='lbutton')
 	{
 		if (page>0)
 		{
 			comment(--page);
+		}
+		else
+		{
+			alert('已经是第一页了(-_-;)');
 		}
 	}
 	
@@ -277,17 +285,28 @@ $('body').prepend('<div id="commentArea" style="'+
 '"><h3><b>Comments</b></h3><hr align="center"><div id=comment></div></div>');
 
 var s;
+var z=1;
 function comment(u)//u:number
 {
 	$.getJSON('data/comment'+u+'.json', function(data){ 
 	s=data;
 	addComment(s);
+	$('#lbutton').remove();
+	$('#rbutton').remove();
+	$('#page').remove();
+	$('body').append('<img id="lbutton" src="img/arrow-left1.png" style='+
+	'position:absolute;'+
+	'left:1050px;top:45px;'+
+	'></img><img id="rbutton" src="img/arrow-right1.png" style='+
+	'position:absolute;'+
+	'left:1100px;top:45px;'+
+	'></img><div id="page" style="font-size:30px;font-family: \'Arial\',\'华文细黑\';position:absolute;left:980px;top:42px;">'+(+page+1)+'/3'+'</div>');
 });
 }
 
 function addComment(s)
 {
-	console.log(s);
+	//console.log(s);
 	$('#comment')[0].innerHTML='';
 	var c='';
 	for (var i=0;i<30;i++)
@@ -316,12 +335,7 @@ function randomComment(s)
 
 comment(page);
 
-$('body').prepend('<img id="lbutton" src="img/arrow-left1.png" style='+
-'position:absolute;'+
-'left:750px;top:60px;'+
-'></img><img id="rbutton" src="img/arrow-right1.png" style='+
-'position:absolute;'+
-'></img>')
+
 
 
 
