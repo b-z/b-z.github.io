@@ -273,7 +273,7 @@ function infoDisappear()
 function min(a,b){return a<b?a:b;}
 function max(a,b){return a>b?a:b;}
 function dis(x1,y1,x2,y2){return (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);}
-
+var appear=false;
 document.addEventListener('mousemove',function(e)//控制两个箭头显示、隐藏
 {	
 	var x=e.x;
@@ -282,10 +282,16 @@ document.addEventListener('mousemove',function(e)//控制两个箭头显示、�
 	var d2=dis(x,y,684,240);
 	$('#right-arrow').css('opacity',max(0,(100000-d2)/150000));
 	$('#left-arrow').css('opacity',max(0,(100000-d1)/150000));
-	if (x>20&&x<674&&y>20&&y<440)
+	if (x>20&&x<674&&y>20&&y<440&&!appear)
+	{
 		infoAppear();
-	else
+		appear=true;
+	}
+	if (!(x>20&&x<674&&y>20&&y<440)&&appear)
+	{
 		infoDisappear();
+		appear=false;
+	}
 });
 
 /**************************************下面是评论部分*******************************************/
