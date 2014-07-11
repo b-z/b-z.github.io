@@ -251,7 +251,7 @@ document.addEventListener('mouseover',function(d)
 		settime=true;
 		timer=setInterval(function(){moveright();},t);
 	}
-	if (d.target.className=='info'||d.target.className=='arrow'||d.target.id=='pic')
+	/*if (d.target.className=='info'||d.target.className=='arrow'||d.target.id=='pic')
 	{
 		infoAppear();
 	//	$('#infoArea').css('opacity',0.8);
@@ -260,7 +260,7 @@ document.addEventListener('mouseover',function(d)
 	{
 		infoDisappear();
 	//	$('#infoArea').css('opacity',0.4);
-	}
+	}*/
 });
 function infoAppear()
 {
@@ -282,6 +282,10 @@ document.addEventListener('mousemove',function(e)//控制两个箭头显示、�
 	var d2=dis(x,y,684,240);
 	$('#right-arrow').css('opacity',max(0,(100000-d2)/150000));
 	$('#left-arrow').css('opacity',max(0,(100000-d1)/150000));
+	if (x>20&&x<674&&y>20&&y<440)
+		infoAppear();
+	else
+		infoDisappear();
 });
 
 /**************************************下面是评论部分*******************************************/
