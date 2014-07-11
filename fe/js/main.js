@@ -23,7 +23,7 @@ function printJSON(p)//打印JSON信息
 {
 	var viewJSON=
 		'<div id="view" style="'+
-		'box-shadow: 5px 5px 14px #888888;'+
+		'box-shadow: 2px 2px 14px #dddddd;'+
 		'border-radius: 0px;'+
 		'margin-left:20px;'+
 		'padding:10px;'+
@@ -59,7 +59,7 @@ function printJSON(p)//打印JSON信息
 function addImg(p)
 {
 	var imgArea='<div id="imgArea" style="'+         //这是图像的区域
-		'box-shadow: 5px 5px 14px #888888;'+
+		'box-shadow: 2px 2px 14px #dddddd;'+
 		'border-radius: 7px;'+
 	//	'border-bottom-left-radius: 9px;'+
 		'border:1px solid #eee;'+
@@ -95,7 +95,7 @@ function addImg(p)
 function addInfo(p)
 {
 	var info='<div id="infoArea" class="info" style="'+//新闻区域
-		'box-shadow: 5px 5px 14px #888888;'+
+		'box-shadow: 2px 2px 10px #dddddd;'+
 		//'border-top-right-radius: 9px;'+
 	//	'border-bottom-right-radius: 5px;'+
 		'overflow:hidden;'+
@@ -300,7 +300,7 @@ var page=(window.localStorage.page==undefined?(window.localStorage.page=0):windo
 $('body').prepend('<div id="commentArea" style="'+
 'left:700px;'+
 'width:500px;'+
-'box-shadow: 5px 5px 14px #888888;'+
+'box-shadow: 2px 2px 14px #dddddd;'+
 'border-radius: 0px;'+
 'border-left:2px solid #3F3;'+
 'font-family: \'Arial\',\'华文细黑\';'+
