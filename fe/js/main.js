@@ -25,6 +25,7 @@ function printJSON(p)//打印JSON信息
 		'border-left:2px solid #3F3;'+
 		'font-family: \'Arial\',\'华文细黑\';'+
 		'background:#eee;'+
+		'opacity:0.7;'+
 		'color:#666;'+
 		'width:634px;'+
 		'float:left;'+
@@ -61,7 +62,7 @@ function addImg(p)
 		'height:420px;'+
 		'margin-left:20px;'+
 		'margin-top:20px;'+
-		'position:fixed;'+
+		'position:absolute;'+
 		//'float:left;'+
 		'">';
 	for (var i=p.num-1;i>=0;i--)
@@ -80,8 +81,8 @@ function addImg(p)
 	}
 	imgArea+='</div>';
 	imgArea+=
-	'<div id="left-arrow" class="arrow" style="position:fixed;top:191px;left:29px;height:100px;background:#eee;opacity:0;border-bottom-right-radius: 7px;border-top-right-radius: 7px;"><img id="left-arrow" class="arrow" src="img/arrow-left.png"></div>'+
-	'<div id="right-arrow" class="arrow" style="position:fixed;top:191px;left:652px;height:100px;background:#eee;opacity:0;border-bottom-left-radius: 7px;border-top-left-radius: 7px;"><img id="right-arrow" class="arrow" src="img/arrow-right.png"></div>';
+	'<div id="left-arrow" class="arrow" style="position:absolute;top:191px;left:29px;height:100px;background:#eee;opacity:0;border-bottom-right-radius: 7px;border-top-right-radius: 7px;"><img id="left-arrow" class="arrow" src="img/arrow-left.png"></div>'+
+	'<div id="right-arrow" class="arrow" style="position:absolute;top:191px;left:652px;height:100px;background:#eee;opacity:0;border-bottom-left-radius: 7px;border-top-left-radius: 7px;"><img id="right-arrow" class="arrow" src="img/arrow-right.png"></div>';
 	$('body').prepend(imgArea);
 }
 function addInfo(p)
@@ -92,7 +93,7 @@ function addInfo(p)
 	//	'border-bottom-right-radius: 5px;'+
 		'overflow:hidden;'+
 		'background:#eee;'+
-		'position:fixed;'+
+		'position:absolute;'+
 		'width:447px;'+
 		'height:130px;'+
 		'left:223px;'+
@@ -281,7 +282,8 @@ $('body').prepend('<div id="commentArea" style="'+
 'color:#666;'+
 'position:absolute;'+		
 'top:10px;'+
-'margin-top:20px'+
+'margin-top:20px;'+
+'opacity:0.7;'+
 '"><h3><b>Comments</b></h3><hr align="center"><div id=comment></div></div>');
 
 var s;
@@ -336,7 +338,7 @@ function randomComment(s)
 comment(page);
 
 
-
+$('body').prepend('<div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:\'img/125.jpg\';"></div>')
 
 
 
