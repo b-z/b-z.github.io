@@ -198,6 +198,21 @@ document.addEventListener('click',function(c)
 	{
 		window.open(p.images[now].details);
 	}
+	if (c.target.id='rbutton')
+	{
+		if (page<2)
+		{
+			comment(++page);
+		}
+	}
+	if (c.target.id='lbutton')
+	{
+		if (page>0)
+		{
+			comment(--page);
+		}
+	}
+	
 });
 document.addEventListener('mouseover',function(d)
 {	
@@ -245,6 +260,7 @@ document.addEventListener('mousemove',function(e)
 });
 
 /**************************************上面是图片部分，下面是评论部分*******************************************/
+var page=0;
 
 $('body').prepend('<div id="commentArea" style="'+
 'left:700px;'+
@@ -277,8 +293,10 @@ function addComment(s)
 	for (var i=0;i<30;i++)
 	{
 		c+='<div>'+
-		'<b style="color:#050">'+(+i+1)+'楼: 花花 说</b>'+
-		'<span align="right" style="font-size:12px;">　　　　　2014/07/10 星期四 22:02</span>'+
+		'<b style="color:#050;float:left;">　'+(+i+1)+'楼:&nbsp;</b>'+
+		'<b style="float:left;"><a style="color:#'+Math.floor(Math.random()*10)+''+Math.floor(Math.random()*10)+''+Math.floor(Math.random()*10)+'" href="http://qianjun1993.github.io">花花</a></b>'+
+		'<b style="color:#050;float:left;">&nbsp;说</b>'+
+		'<p align="right" style="font-size:12px;">2014/07/10 星期四 22:02　</p>'+
 		'<p style="font-size:18px;">　　'+randomComment(s)+
 		'</p><hr></div>';
 	}
@@ -295,4 +313,17 @@ function randomComment(s)
 	return s.subject[r[0]]+s['predicate'][r[1]]+s['object'][r[2]]+s.kaomoji[r[3]];
 }
 
-comment(1);
+
+comment(page);
+
+$('body').prepend('<img id="lbutton" src="img/arrow-left1.png" style='+
+'position:absolute;'+
+'left:750px;top:60px;'+
+'></img><img id="rbutton" src="img/arrow-right1.png" style='+
+'position:absolute;'+
+'></img>')
+
+
+
+
+
