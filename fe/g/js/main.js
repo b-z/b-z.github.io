@@ -1027,6 +1027,7 @@
 			$('#ranking').css('background','#3369cd');
 			$('#right2').fadeOut(300);
 		});
+		$('#diesound')[0].play();
 	}
 	
 	function retry()
