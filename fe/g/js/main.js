@@ -1014,6 +1014,7 @@
 		$('#die').css('left',width/2-200+'px');
 		$('.title').css('top',height/2-200+'px');
 		$('.title').css('left',width/2-$('.title').width()/2+'px');
+		$('#diesound')[0].play();
 		$('#ranking').mouseenter(function()
 		{
 			$('#ranking').css('background','#1954c0');
