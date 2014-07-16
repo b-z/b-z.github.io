@@ -132,7 +132,7 @@
 		window.clearTimeout(smallTimer);
 		window.clearTimeout(slowTimer);
 		flash=0;
-		instructionsContent='<b style="font-size:22px;"><p>INSTRUCTION</p></b><p>Move mouse to control the fish and avoid attack</p><p>Diamonds can help you gain special abilities</p><p>Press Space or Enter for pause(^^)</p>';
+		instructionsContent='<b style="font-size:22px;"><p>INSTRUCTION</p></b><p>Move mouse to control the fish</p><p>Diamonds can help you gain special abilities</p><p>Press Space or Enter for pause(^^)</p>';
 		aboutContent='<b style="font-size:22px;"><p>ABOUT US</p></b><p>周伯威 zhou_bw@yeah.net</p><p>林杨湄 linym012@163.com</p><p>Thanks for playing(*´▽｀*)</p>';
 		pause=false;
 		pauseTimes=30;//最大暂停次数
