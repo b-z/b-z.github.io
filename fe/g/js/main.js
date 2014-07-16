@@ -1007,7 +1007,7 @@
 			localStorage.count = 1;
 		$('html').css({cursor:'default'});
 		var t=clock+score;
-		$('body').append('<div class="title">'+_gameover+'</div><div id="die"><div id="score">'+_scoreis+(t)+'0.</div>'+
+		$('body').append('<div class="title">'+_gameover+'</div><div id="die"><div id="score">'+_scoreis+(t)+'0</div>'+
 		'<div id="ranking">'+_ranking+'</div><div id="retry" class="button">'+_tryagain+'</div></div>');
 		addRankingInfo(t+'0');
 		$('#die').css('top',height/2-100+'px');
