@@ -1,4 +1,4 @@
-/*******************清空上一次内容&添加音乐**********/
+/*******************清空上一次内容******************/
 	$('body')[0].innerHTML='<audio id="music" src="music/PilgrimsOnALongJourney.mp3" loop="loop"></audio>'
 						  +'<audio id="diesound" src="music/glass.wav"></audio>'
 						  +'<audio id="killsound" src="music/kill.wav"></audio>'
@@ -22,6 +22,11 @@
 	function rad(d)//角度-->弧度
 	{
 		return d/180*PI;
+	}
+
+	function xy(u)//转极坐标为直角坐标
+	{
+		return {x:u.r*cos(u.t), y:u.r*sin(u.t)};
 	}
 
 	function dis2(x1,y1,x2,y2)//距离的平方
@@ -94,12 +99,14 @@
 		diamondShape = [{r:d1,t:PI+rad(90+t1+t2/2)},{r:d2,t:PI+rad(90+t2/2)},{r:d2,t:PI+rad(90-t2/2)},{r:d1,t:PI+rad(90-t1-t2/2)},{r:0,t:PI}];
 		Star_6 = [{r:starSize,t:rad(90)},{r:starSize/2*1.5,t:rad(60)},{r:starSize,t:rad(30)},{r:starSize/2*1.5,t:rad(0)},{r:starSize,t:rad(-30)},{r:starSize/2*1.5,t:rad(-60)},{r:starSize,t:rad(-90)},{r:starSize/2*1.5,t:rad(-120)},{r:starSize,t:rad(-150)},{r:starSize/2*1.5,t:rad(-180)},{r:starSize,t:rad(-210)},{r:starSize/2*1.5,t:rad(-240)}];
 		for (var i in butterflyShape) butterflyShape[i].r*=bSize;
+		
 		balls=[];         //以下四个存储画面中的炮弹
 		bigBalls=[];
 		butterflys=[];
 		stars=[];
 		diamonds=[];
 		waves=[];
+		
 		ballSpeed=4.2;
 		bigBallSpeed=3.8;
 		butterflySpeed=0.35;
@@ -110,11 +117,13 @@
 		waveRSpeed=0.7;
 		waveWidth=6;//水波的圈的宽度
 		waveMaxR=100;
+		
 		ballDensity=0.5;//每一帧新产生一个ball的概率
 		bigBallDensity=0.08;//每一帧新产生一个泡泡的概率
 		butterflyDensity=5;//每次每边产生蝴蝶个数
 		starDensity=8;//每8个时钟产生一个
 		diamondDensity=0.0012;//宝石掉落几率
+		
 		judge={
 			ball:cube(plSize/4+ballSize),
 			bigBall:cube(plSize/4+bigBallSize),
@@ -122,18 +131,21 @@
 			star:cube(plSize/4+starSize),
 			diamond:cube(plSize/4+20)
 		};
+		
 		clock=0;
 		score=0;
 		died=false;
 		level=0;
 		life=5;
 		wudi=false;
+		
 		window.clearTimeout(wudiTimer);
 		window.clearTimeout(smallTimer);
 		window.clearTimeout(slowTimer);
 		flash=0;
 		instructionsContent='<b style="font-size:22px;"><p>INSTRUCTION</p></b><p>Move mouse to control the fish</p><p>Diamonds can help you gain special abilities</p><p>Press Space or Enter for pause(^^)</p>';
 		aboutContent='<b style="font-size:22px;"><p>ABOUT US</p></b><p>周伯威 zhou_bw@yeah.net</p><p>林杨湄 linym012@163.com</p><p>Thanks for playing(*´▽｀*)</p>';
+		info='';//调试信息
 		pause=false;
 		pauseTimes=30;//最大暂停次数
 		playNum = 0;//(window.localStorage.playNum == undefined ? (window.localStorage.playNum = 0) : window.localStorage.playNum); //游戏次数
@@ -425,7 +437,7 @@
 		}
 	}
 	
-	function drawOneWave(x,y,r,i)//i:第几个波
+	function drawOneWave(x,y,r,i)
 	{
 		cv.save();
 		cv.beginPath();
@@ -501,14 +513,14 @@
 		stars.push({x:x,y:y,deg:ran(0,1),aim:atan2(pl.y-y,pl.x-x)+(clock%3-1)*rad(3),rspeed:ran(rad(-10),rad(10))});
 	}
 	
-	function addDiamond()//钻石，从上面落下来，非均匀分布
+	function addDiamond()
 	{
 		var a=width/10,b=9*a;
 		var x=b-(cube(ran(a,b))-a*a)/(b*b-a*a)*(b-a);//使其分布在右侧较为密集
 		diamonds.push({x:x,y:-50,speed:ran(1.5,2),func:ranInt(0,5)});
 	}
 	
-	function addWave()//水波
+	function addWave()
 	{
 		waves.push({x:pl.x,y:pl.y,r:waveR});
 		if (waves.length>waveNum) waves.splice(0,1); 
@@ -588,7 +600,7 @@
 	function planeMove()
 	{
 		var dd=dis2(mx,my,pl.x,pl.y);
-		pl.ax=(mx-(pl.x+plSize*cos(pl.arc)))-pl.vx/u1;//过阻尼
+		pl.ax=(mx-(pl.x+plSize*cos(pl.arc)))-pl.vx/u1;//欠阻尼
 		pl.ay=(my-(pl.y+plSize*sin(pl.arc)))-pl.vy/u1;
 		var vv=dis2(pl.vx,pl.vy,0,0);
 		pl.x+=pl.vx/u2;
@@ -618,10 +630,10 @@
 				starMove();
 				drawStars();
 				diamondMove();
-				if (!died) drawDiamonds();
+				drawDiamonds();
 				if (!died&&(level==1&&clock%25==0||level>1&&clock%20==0)) addWave();//产生与音乐节奏一致的水波
 				if (random()<diamondDensity) addDiamond();
-				if (level<1)//下面产生各个关卡的子弹
+				if (level<1)
 				{
 					if (clock<1200&&random()<ballDensity*clock/1200||clock>=1200&&random()<ballDensity)
 						addBall(rad(ran(175,185)));
@@ -642,7 +654,7 @@
 				{
 					if (clock%starDensity==0) addStar();	
 				}
-				if (!died)//输出左上角文字信息，其透明度与小鱼位置有关
+				if (!died)
 				{
 					cv.save();
 					var txt=_top_score+(clock+score)+'0  '+_top_life;
@@ -754,19 +766,24 @@
 		           }
 			}
 			if (flag == 0)  /*本趟排序未发生交换，提前终止算法*/
-				break;
+		    break;
 		}
 		for(var i = 0; i<5; i++)//取前5次最高分输出
 		{
 			if(scoreArr[i] == undefined)
 				scoreArr[i] = 0;
+			/*var x = $('<div/>');
+			x[0].innerText =i+1+". "+scoreArr[i];
+			x.appendTo('right2');
+			*/
 		}
 		var rankContent = '<div class="right2" style = "margin-top:12px">1. '+scoreArr[0]+'</div><div class="right2">2. '+scoreArr[1]+'</div><div class="right2">3. '+scoreArr[2]+'</div><div class="right2">4. '+scoreArr[3]+'</div><div class="right2">5. '+scoreArr[4]+'</div>';
 		$('#right2')[0].innerHTML = rankContent;
+		
 	}
 	
 /*********************暂停*********************************/
-	function startPause(e)//暂停游戏
+	function startPause(e)
 	{
 		if (e.keyCode!=13&&e.keyCode!=32&&e.keyCode!=80)
 			return;
@@ -824,7 +841,7 @@
 		$('#music')[0].pause();
 	}
 	
-	function stopPause()//继续游戏
+	function stopPause()
 	{
 		pause=false;
 		'#music'
@@ -837,7 +854,7 @@
 	}
 	
 /*********************吃钻石相关***************************/
-	function eatDiamond(f)//吃钻石后的响应
+	function eatDiamond(f)
 	{
 		if (!died)
 		{
@@ -864,12 +881,12 @@
 		$('#info'+t).fadeOut(1500);
 	}
 	
-	function func_addScore(s)//加分道具
+	function func_addScore(s)
 	{
 		score+=s*100;//对玩家显示加了s千分
 	}
 	
-	function func_slow(t)//减速道具
+	function func_slow(t)
 	{
 		var i;
 		for (i in balls) balls[i].speed/=t;
@@ -900,12 +917,12 @@
 		flash=8;
 	}
 	
-	function func_oneUp()//加命道具
+	function func_oneUp()
 	{
 		life++;
 	}
 	
-	function func_wudi(time)//无敌道具
+	function func_wudi(time)
 	{
 		if (wudiTimer) window.clearTimeout(wudiTimer);//清除之前无敌的计时器
 		wudi=true;
@@ -915,7 +932,7 @@
 		},time);
 	}
 	
-	function func_clear()//清屏道具
+	function func_clear()
 	{
 		balls=[];
 		bigBalls=[];
@@ -924,7 +941,7 @@
 		flash=8;
 	}
 	
-	function func_small(t)//变小道具
+	function func_small(t)
 	{
 		var i;
 		for (i in bigBalls) bigBalls[i].size/=t;
@@ -965,7 +982,7 @@
 	}
 	
 /*********************玩家挂了*****************************/
-	function kill()//中弹时候的响应
+	function kill()
 	{
 		if (!wudi&&!died) 
 		{
@@ -975,10 +992,12 @@
 			$('#killsound')[0].play();
 		}
 		if (!life) 
+		{
 			die();
+		}
 	}
 
-	function die()//挂了
+	function die()
 	{
 		if (died) return;
 		died=true;
@@ -1010,7 +1029,7 @@
 		});
 	}
 	
-	function retry()//重新开局
+	function retry()
 	{
 		$('#die').remove();
 		$('.title').remove();
