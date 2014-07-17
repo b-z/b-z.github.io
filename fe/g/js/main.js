@@ -844,7 +844,6 @@
 	function stopPause()
 	{
 		pause=false;
-		'#music'
 		$('html').css({cursor:'none'});
 		$('#pause').remove();
 		$('.title').remove();
