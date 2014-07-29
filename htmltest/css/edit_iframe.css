@@ -1,0 +1,39 @@
+﻿.editFrame1, .editFrame2, .editFrame3, .editFrame4{
+	top: 113px;
+	left:16.3%;
+	float: left;
+	width: 820px;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: height 0.2s ease-in;
+}
+
+#editCover{
+	position: absolute;
+	background: #000;
+	opacity: 0;
+	z-index: -1;
+	width: 100%;
+	overflow: hidden;
+	-webkit-transition: opacity 0.3s ease-in;
+}
+
+.userFace img{
+	-webkit-transition: height 0.3s ease-in, width 0.3s ease-in;
+}
+
+.coverFace{
+	position: absolute;
+	top: 113px;
+	left: 16%;
+	z-index: 1200;
+}
+
+.blogLeftBar li{
+	-webkit-transition: background 0.3s;
+}
+
+.blogLeftBar{
+	-webkit-transition: opacity 0.2s; 
+}

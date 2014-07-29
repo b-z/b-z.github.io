@@ -1,0 +1,116 @@
+/***********************右侧栏部分*******************/
+.blogRight{
+	width: 100%;
+	height: 200px;
+	font-family: "微软雅黑", arial;
+	font-size: 15px;
+	color: #444444;
+}
+
+/***********************用户管理链接*********************/
+
+#userManage{
+	height: 60px;
+	overflow: visible;
+	z-index: 6;
+	background-color: #f3f3f3;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+#userManage .text, #pasgManage .text{
+	
+	margin-left: 20px;
+	line-height: 25px;
+}
+
+#userManage #name{
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+#userManage #email{
+	font-size: 12px;
+}
+
+/**********************文章管理*************************/
+#pasgManage{
+	border-color:#b2b2b2;
+	background-color: #f3f3f3;
+	margin-top: 4px;
+	height: 35px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+#pasgIcon{
+	background: url("/img/icon24.png") no-repeat 999px 999px;
+	background-position: 0 -1684px;
+	width: 25px;
+	height: 18px;
+	float: left;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+#pasg{
+	margin-top: 3px;
+	margin-left: 30px;
+	height: 25px;
+}
+
+/****************私信图标*******************/
+#mesgManage{
+	border-color:#b2b2b2;
+	background-color: #f3f3f3;
+	height: 35px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+#mesgIcon{
+	background: url("/img/icon24.png") no-repeat 999px 999px;
+	background-position: 0 -1966px;
+	width: 25px;
+	height: 18px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+#mesg{
+	margin-top: 3px;
+	margin-left: 30px;
+	height: 25px;
+}
+
+/**************************博客设置**********************/
+#blogSetting{
+	border-color:#b2b2b2;
+	background-color: #e7e7e7;
+	height: 25px;
+	margin-top: 2px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	padding: 5px;
+	padding-bottom: 0px;
+	font-size: 12px;
+}
+
+#blogSettingIcon{
+	background: url("/img/icon24.png") no-repeat 999px 999px;
+	background-position: 0 -1601px;
+	width: 25px;
+	height: 18px;
+	float: left;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+#BlogSettingText{
+	margin-top: 2px;
+	color: #888888;
+}
+
+/***********************关注****************************/

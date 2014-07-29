@@ -1,0 +1,2628 @@
+﻿     {
+        position: relative;
+        zoom: 1;
+        text-align: left;
+    }
+    -hack {
+        position: absolute;
+        z-index: 99;
+    }
+     .zcom {
+        width: 200px;
+        border: 1px solid #aaa;
+    }
+     .zcse {
+        visibility: hidden;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background: #fff;
+    }
+     .zitm {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        cursor: default;
+    }
+     .zitm.js-zhvr-900 {
+        background-color: #316ac5;
+    }
+     .zcse .js-login-hovered {
+        background-color: #ddd;
+        color: #fff;
+    }
+     .zcvr,
+     .zhnt {
+        display: none;
+        position: fixed;
+        _position: absolute;
+        z-index: 80;
+    }
+     .zcvr {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(http://b.bst.126.net/common/empty.png);
+    }
+     .zhnt {
+        top: 5px;
+        right: 5px;
+        padding: 4px;
+        color: #000;
+        background: #ffffae;
+        z-index: 120;
+    }
+    -hack {
+        position: absolute;
+        z-index: 99;
+    }
+     {
+        position: absolute;
+        z-index: 100;
+        border: 1px solid #97abc9;
+        background-color: #fff;
+    }
+    -hack {
+        position: absolute;
+        z-index: 99;
+    }
+    -cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(http://b.bst.126.net/common/empty.png);
+        z-index: 10;
+    }
+     {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        text-align: center;
+        border: 1px solid #97abc9;
+        background-color: #fff;
+    }
+     .ztbr {
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        background-color: #5e9ff7;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+    }
+     .zmov {
+        cursor: move;
+    }
+     .zttl {
+        width: 85%;
+        padding-left: 10px;
+    }
+     .zcls {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 5;
+    }
+     .zcnt {
+        padding: 10px;
+        min-height: 100px;
+        _height: 100px;
+        font-size: 12px;
+    }
+     .zext {
+        display: none;
+    }
+    .js-zncls-102 .zcls {
+        display: none;
+    }
+    .zbwin {
+        color: #000;
+        border: 1px solid #aaa;
+        background-color: #fff;
+    }
+    .zbwin .zcls {
+        top: 8px;
+        background: url(http://b.bst.126.net/common/widget/wincls.gif) no-repeat 2px center;
+        text-indent: 50px;
+    }
+    .zbwin .ztbr {
+        height: 35px;
+        line-height: 35px;
+        color: #000;
+        background: url(http://b.bst.126.net/common/widget/winbar.gif) repeat-x;
+    }
+    .zbwin .zact {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .zbwin .ztxt {
+        height: 1.3em;
+        padding-top: 3px;
+    }
+    .zbwin .zbtn {
+        height: 28px;
+        padding: 0 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .zbwin .zbtnok {
+        font-weight: bold;
+    }
+    .zbwin .zbtncc {
+        margin-left: 20px;
+    }
+    {
+        font-size: 12px;
+        text-align: left;
+    }
+    .zbrd {
+        border-width: 1px;
+        border-style: solid;
+    }
+    .zbgp {
+        background: url(http://b.bst.126.net/common/icon.png) no-repeat;
+    }
+    .zcnt {
+        height: 100px;
+        overflow: hidden;
+    }
+    .zcnt iframe,
+    .zcnt textarea {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    .zcnt textarea {
+        overflow: auto;
+    }
+    .zhnd {
+        cursor: pointer;
+    }
+    .zbtn {
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+        zoom: 1;
+        text-align: right;
+    }
+    .zbok {
+        _margin-top: 4px;
+    }
+    .zfce {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-position: 0 1px;
+    }
+    .zvcd {
+        position: absolute;
+        top: 0;
+        right: 80px;
+    }
+    .zvcd * {
+        vertical-align: middle;
+    }
+    .zvcd img {
+        width: 40px;
+        height: 24px;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+    .zvcd span {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .zvcd input {
+        width: 35px;
+        padding: 2px 0;
+    }
+    .zmsg {
+        line-height: 20px;
+    }
+    .zmsg .zicn {
+        width: 25px;
+        height: 20px;
+        background-position: 5px -58px;
+    }
+    .zprt {
+        left: 0;
+        top: 30px;
+    }
+     textarea {
+        height: 150px;
+    }
+     .ztxt {
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+    }
+     .zbtn {
+        margin: 5px 0;
+        text-align: left;
+    }
+     .zbtnok {
+        font-weight: bold;
+    }
+     {
+        font-size: 12px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+     .frg {
+        display: none;
+        font-weight: bold;
+    }
+     .iblock {
+        height: 22px;
+        line-height: 22px;
+        padding: 1px 8px;
+        margin: 0 2px;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+     .pgi:hover,
+     .pgi.js-zhvr-258 {
+        padding: 0 7px;
+        border-width: 1px;
+        border-style: solid;
+    }
+     .pgi.js-zslt-987 {
+        padding: 1px 8px;
+        border-width: 0;
+        background-color: transparent;
+        font-weight: bold;
+        cursor: default;
+        text-decoration: none;
+    }
+     .pgb.js-znpg-097 {
+        visibility: hidden;
+    }
+    .js-zfrg-6540 .frg {
+        display: none;
+    }
+    .js-zfrg-6541 .frg.fgn {
+        display: inline;
+    }
+    .js-zfrg-6542 .frg.fgp {
+        display: inline;
+    }
+    .js-zfrg-6543 .frg {
+        display: inline;
+    }
+  
+     .zshw {
+        margin: 0 5px;
+    }
+     .zbtn {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #36c;
+    }
+     .zbtn.js-zdsb-124 {
+        text-decoration: none;
+        cursor: default;
+        color: #939393;
+    }
+    .proxy-span2 {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        width: 370px;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .proxy-span2 .proxy-span {
+        position: absolute;
+        visibility: hidden;
+        width: 370px;
+        line-height: 20px;
+    }
+    {
+        position: absolute;
+        z-index: 100;
+        text-align: left;
+        cursor: pointer;
+        color: #444;
+        background: #fff;
+    }
+    *[hidefocus] {
+        outline: none;
+    }
+    .clearfix {
+        zoom: 1;
+    }
+    .thide {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        word-break: keep-all;
+    }
+    .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+    .iblock {
+        display: -moz-inline-box;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+    .js-trans {
+        transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -o-transition: all 0.15s linear;
+    }
+    .zitm {
+        /*padding:0 5px;width:57px;*/
+        *min-width: expression(this.parentNode.clientWidth+"px");
+        height: 19px;
+        line-height: 19px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .zitm {
+        background-color: #fff;
+        text-align: center;
+    }
+    .zitm:hover,
+    .item.js-zhvr-910 {
+        color: #fff;
+        background-color: #4ea0d4;
+    }
+    .scrollNode {
+        position: relative;
+        zoom: 1;
+        overflow: hidden;
+        border: 1px solid #c0c0c0;
+    }
+    .scrollNode .scrollList {
+        position: absolute;
+        left: 0;
+        top: 0;
+        *text-align: center;
+    }
+    .scrollNode .vSlideWayNode {
+        display: none;
+        position: absolute;
+        right: 0;
+        _right: -1px;
+        top: 0;
+        background: #e2dfdf;
+        cursor: default;
+    }
+    .scrollNode .hSlideWayNode {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #e2dfdf;
+        cursor: default;
+    }
+    .scrollNode .vSlideWayNode .vSlideBtn {
+        position: absolute;
+        top: 0left: 0;
+        width: 6px;
+        background: #aaa;
+        text-indent: -9999px;
+    }
+    .scrollNode .hSlideWayNode .hSlideBtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        background: #aaa;
+        text-indent: -9999px;
+    }
+    .js-noHoverItem,
+    .js-noHoverItem:hover {
+        color: #444;
+        background-color: #fff;
+    }
+    .js-hoverItem,
+    .js-hoverItem:hover {
+        color: #fff;
+        background-color: #4ea0d4;
+    }
+    .zitm {
+        font-size: 16px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .zcvr,
+    .zhnt {
+        display: none;
+        position: fixed;
+        _position: absolute;
+        z-index: 80;
+    }
+    .zcvr {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(http://b.bst.126.net/common/empty.png);
+    }
+    .zhnt {
+        display: block;
+        top: 0px;
+        color: #000;
+        z-index: 12000;
+    }
+     {
+        height: 120px;
+    }
+     .isaymin {
+        height: 112px;
+    }
+     .isaymin ul {
+        height: 80px;
+        padding: 23px 0 0 29px;
+    }
+     .isaymin li {
+        float: left;
+        width: 60px;
+        height: 80px;
+        padding: 0 20px;
+    }
+     .isaymin li a {
+        display: block;
+        color: #aaa;
+    }
+     .isaymin li em {
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 0 auto;
+        background: url("http://l.bst.126.net/rsc/img/sharewidget/icons24.png") -9999px -9999px no-repeat;
+        _background: url("http://l.bst.126.net/rsc/img/sharewidget/icons8.png") -9999px -9999px no-repeat;
+    }
+     .isaymin li span {
+        display: block;
+        line-height: 22px;
+        margin-top: 5px;
+        text-align: center;
+    }
+     .isaymin li.weixin em {
+        background-position: 2px 2px;
+    }
+     .isaymin li.yixin em {
+        background-position: -99px 2px;
+    }
+     .isaymin li.sinawb em {
+        background-position: -199px 2px;
+    }
+     .isaymin li.qzone em {
+        background-position: -299px 2px;
+    }
+     .isaymin li.reblog em {
+        background-position: -399px 2px;
+    }
+     .isaymin li a:hover {
+        color: #7594b3;
+    }
+     .isaymin li.weixin a:hover em {
+        background-position: 2px -87px;
+    }
+     .isaymin li.yixin a:hover em {
+        background-position: -99px -87px;
+    }
+     .isaymin li.sinawb a:hover em {
+        background-position: -199px -87px;
+    }
+     .isaymin li.qzone a:hover em {
+        background-position: -299px -87px;
+    }
+     .isaymin li.reblog a:hover em {
+        background-position: -399px -87px;
+    }
+    .towdimcodelayer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        margin-top: 0;
+        opacity: 0;
+    }
+    .js-transition {
+        transition: margin-top .15s ease, opacity .12s linear;
+        -webkit-transition: margin-top .15s ease, opacity .12s linear;
+        -moz-transition: margin-top .18s ease, opacity .15s linear;
+        -ms-transition: margin-top .15s ease, opacity .12s linear;
+        -o-transition: margin-top .15s ease, opacity .12s linear;
+    }
+    .towdimcodelayer .arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 8px;
+        border-style: solid;
+        _display: none;
+    }
+    .towdimcodelayer .js-arrow-up {
+        left: 72px;
+        top: -15px;
+        border-color: transparent transparent #191919 transparent;
+    }
+    .towdimcodelayer .js-arrow-down {
+        left: 72px;
+        bottom: -15px;
+        border-color: #191919 transparent transparent transparent;
+    }
+    .towdimcodelayer .layerbd {
+        width: 100px;
+        height: 150px;
+        padding: 30px 30px 0 30px;
+        background: #191919;
+        box-shadow: 0 1px 3px #000;
+        -webkit-box-shadow: 0 1px 3px #000;
+        -moz-box-shadow: 0 1px 3px #000;
+        -o-box-shadow: 0 1px 3px #000;
+    }
+    .towdimcodelayer .codebg {
+        width: 75px;
+        height: 75px;
+        padding: 13px 12px 12px 13px;
+        background: #fff;
+    }
+    .towdimcodelayer .codebg img {
+        width: 75px;
+        height: 75px;
+    }
+    .towdimcodelayer .codettl {
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        color: #888;
+        font-size: 12px;
+    }
+    .js-show-up {
+        margin-top: 15px;
+        opacity: 1;
+    }
+    .js-show-down {
+        margin-top: -15px;
+        opacity: 1;
+    }
+     {
+        position: relative;
+        z-index: 16;
+        float: left;
+        background-color: #fff;
+    }
+    .js-showlist {
+        z-index: 1600;
+    }
+    *[hidefocus] {
+        outline: none;
+    }
+     .clearfix {
+        zoom: 1;
+    }
+     .thide {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        word-break: keep-all;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .ztxt {
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        max-width: 191px;
+        font-size: 16px;
+        color: #777;
+        cursor: pointer;
+    }
+     .zdwn {
+        float: left;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        margin: 10px;
+        border-width: 5px 5px 0 5px;
+        border-style: solid;
+        border-color: #aaa transparent transparent transparent;
+    }
+     .zlst {
+        visibility: hidden;
+        position: absolute;
+        top: 30px;
+        left: -40px;
+    }
+     .zlst .case {
+        width: 254px;
+        max-height: 2000px;
+        overflow: auto;
+        overflow-x: hidden;
+        border: 1px solid #c2c2c2;
+        background-color: #fff;
+    }
+     .zlst .nipple {
+        position: absolute;
+        top: -9px;
+        width: 0;
+        height: 0;
+        border-width: 0 9px 9px 9px;
+        border-style: solid;
+        border-color: transparent transparent #c2c2c2;
+        /*border-color:transparent;*/
+        border-image: none;
+    }
+     .zlst .nipple:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: -9px;
+        width: 0;
+        height: 0;
+        border-width: 0 9px 9px 9px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+        border-image: none;
+    }
+     .zlst .js-nipple-hover.nipple:after {
+        border-bottom-color: #999;
+    }
+     .zlst.js-upperlist .nipple {
+        top: auto;
+        bottom: -9px;
+        border-width: 9px 9px 0;
+        border-color: #c2c2c2 transparent transparent;
+    }
+     .zlst.js-upperlist .nipple:after {
+        top: auto;
+        bottom: 1px;
+        border-width: 9px 9px 0;
+        border-color: #fff transparent transparent;
+    }
+     .zlst.js-upperlist .js-nipple-hover.nipple:after {
+        border-top-color: #999;
+        border-bottom-color: transparent;
+    }
+     .zlst .zitm {
+        padding: 0 5px 0 40px;
+        height: 36px;
+        line-height: 36px;
+        color: #444;
+        font-size: 16px;
+        cursor: pointer;
+    }
+     .zlst .zitm:hover,
+     .zlst .zitem.js-zhvr-910 {
+        color: #fff;
+        background-color: #999;
+    }
+     .noSelect,
+     .noSelect:hover {
+        background-position: -230px -482px;
+    }
+    .js-noDownListWhenOne .zdwn,
+    .js-noDownListWhenOne .zlst {
+        display: none;
+    }
+    .js-noDownListWhenOne .ztxt {
+        cursor: default;
+    }
+    .js-noSelect .ztxt,
+    .js-noSelect .zdwn {
+        cursor: default;
+    }
+     {
+        position: relative;
+        zoom: 1;
+        padding: 0 40px 0 10px;
+        border-style: solid;
+        border-color: #dfdfdf;
+        border-width: 0 1px 1px 1px;
+        color: #222;
+        /*background:#fff url("http://l.bst.126.net/rsc/img/shadow-in.png") no-repeat;*/
+    }
+     .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .f-iblock {
+        display: -moz-inline-box;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+     .tokens {
+        line-height: 20px;
+        padding: 10px 0 10px 24px;
+    }
+     .tokens .token {
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 1px;
+        margin-right: 8px;
+        color: #aaa;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+     .tokens .token:hover {
+        text-decoration: line-through;
+        cursor: pointer;
+    }
+     .tokens .token:before {
+        content: "#";
+    }
+     .iptwrap {
+        position: relative;
+        float: left;
+    }
+     .iptwrap .taginput {
+        position: relative;
+        /*left:-1px;*/
+        z-index: 2;
+        min-width: 60px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background: url(http://l.bst.126.net/rsc/img/common/empty.png) 0 0 repeat;
+        color: #333;
+        border: 0;
+        outline: 0;
+    }
+     .iptwrap .hiddenSpan {
+        position: absolute;
+        font-size: 12px;
+        visibility: hidden;
+        white-space: nowrap;
+        word-break: keep-all;
+    }
+     .iptwrap label {
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: 0;
+        z-index: 1;
+        width: 240px;
+        height: 19px;
+        line-height: 19px;
+        color: #ccc;
+        font-size: 14px;
+        overflow: hidden;
+    }
+     .iptwrap .js-hidetips {
+        display: none;
+    }
+     .taguseful {
+        position: absolute;
+        right: 9px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        text-indent: -9999px;
+        background: url("http://l.bst.126.net/rsc/img/newpublish/helpicon.png") 1px 1px no-repeat;
+    }
+     .taguseful:hover {
+        background-position: 1px -41px;
+    }
+     .usedtagarea {
+        visibility: hidden;
+        overflow: hidden;
+        height: 0;
+    }
+     .usedtagarea {
+        transition: height 0.2s linear;
+        -webkit-transition: height 0.2s linear;
+        -moz-transition: height 0.2s linear;
+        -o-transition: height 0.2s linear;
+    }
+     .usedtagarea .nousedtags {
+        height: 22px;
+        line-height: 22px;
+        padding: 0 0 7px 3px;
+        color: #666;
+        font-size: 12px;
+    }
+     .usedtagarea .nousedtags a {
+        color: #666;
+        text-decoration: underline;
+    }
+    .token2 {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        padding: 0 5px;
+        margin: 0 6px 6px 0;
+        color: #fff;
+        font-size: 12px;
+        white-space: nowrap;
+        background-color: #aaa;
+        cursor: pointer;
+    }
+    .token2 {
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+    }
+    .token2:hover {
+        background-color: #888;
+    }
+     {} .ztxt {
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        margin-right: -5px;
+        color: #999;
+        font-size: 14px;
+    }
+     .zdwn {
+        margin: 13px 10px 12px 10px;
+    }
+     .zlst {
+        display: none;
+        left: -31px;
+        width: 292px;
+        height: 224px;
+        max-height: none;
+        background: #fff;
+    }
+    .js-showlist .zlst {
+        display: block;
+    }
+     .zlst.js-upperlist {
+        top: auto;
+        bottom: 36px;
+    }
+     .ccicon {
+        background: url(/rsc/img/ccommons/cc-icon24.png?004) 0 0 no-repeat;
+        _background: url(/rsc/img/ccommons/cc-icon8.png?004) 0 0 no-repeat;
+    }
+     .ccicon-0 {
+        width: 20px;
+        background-position: -10px -5px;
+    }
+     .ccicon-1 {
+        width: 64px;
+        background-position: -10px -30px;
+    }
+     .ccicon-2 {
+        width: 64px;
+        background-position: -10px -57px;
+    }
+     .ccicon-3 {
+        width: 42px;
+        background-position: -10px -85px;
+    }
+     .ccicon-4 {
+        width: 42px;
+        background-position: -10px -113px;
+    }
+     .ccicon-5 {
+        width: 42px;
+        background-position: -10px -141px;
+    }
+     .ccicon-6 {
+        width: 20px;
+        background-position: -10px -169px;
+    }
+     .ztxt .ccicon {
+        opacity: 0.6;
+    }
+     .zlst .case {
+        width: 292px;
+    }
+     .zlst .zitm {
+        height: 28px;
+        line-height: 28px;
+        padding: 0 10px 0 30px;
+        color: #444;
+    }
+     .zitm .ccicon {
+        float: left;
+        width: 72px;
+        height: 100%;
+    }
+     .zitm .cctitle {
+        float: left;
+        width: 180px;
+        height: 100%;
+        overflow: hidden;
+        font-size: 12px;
+    }
+     .zlst .js-moreinfoitem {
+        position: relative;
+        zoom: 1;
+        cursor: default;
+    }
+     .js-moreinfoitem .moreinfo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 292px;
+        height: 28px;
+        background: #fff;
+    }
+     .js-moreinfoitem .moreinfo a {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        height: 16px;
+        line-height: 16px;
+        font-size: 10px;
+        color: #666;
+        text-decoration: underline;
+    }
+     .zlst .zitm:hover .ccicon-0,
+     .zlst .item.js-zhvr-910 .ccicon-0 {
+        background-position: -10px -331px;
+    }
+     .zlst .zitm:hover .ccicon-1,
+     .zlst .item.js-zhvr-910 .ccicon-1 {
+        background-position: -10px -356px;
+    }
+     .zlst .zitm:hover .ccicon-2,
+     .zlst .item.js-zhvr-910 .ccicon-2 {
+        background-position: -10px -383px;
+    }
+     .zlst .zitm:hover .ccicon-3,
+     .zlst .item.js-zhvr-910 .ccicon-3 {
+        background-position: -10px -411px;
+    }
+     .zlst .zitm:hover .ccicon-4,
+     .zlst .item.js-zhvr-910 .ccicon-4 {
+        background-position: -10px -439px;
+    }
+     .zlst .zitm:hover .ccicon-5,
+     .zlst .item.js-zhvr-910 .ccicon-5 {
+        background-position: -10px -467px;
+    }
+     .zlst .zitm:hover .ccicon-6,
+     .zlst .item.js-zhvr-910 .ccicon-6 {
+        background-position: -10px -495px;
+    }
+    .js-noSelect .zdwn {
+        visibility: hidden;
+    }
+     {
+        width: 190px;
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #c0c0c0;
+    }
+     .iblock {
+        display: -moz-inline-box;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+     .simpleBar,
+     .simpleBar a {
+        background: url("http://l.bst.126.net/rsc/img/calendar/calendaricon8.png") -9999px -9999px no-repeat;
+    }
+     .complexBar {
+        display: none;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 3px;
+        cursor: default;
+        background-color: #ccc;
+        color: #fff;
+    }
+     .complexBar .zleft {
+        float: left;
+    }
+     .complexBar .zright {
+        float: right;
+    }
+     .complexBar .selmonth {
+        width: 80px;
+        padding: 2px 0 0 3px;
+    }
+     .complexBar .selyear {
+        width: 80px;
+        padding-top: 2px;
+    }
+     .complexBar .iptyear {
+        width: 40px;
+    }
+     .complexBar .btnyear {
+        width: 22px;
+    }
+     .complexBar .btnyear .yearup,
+     .complexBar .btnyear .yeardown {
+        display: block;
+        width: 16px;
+        height: 9px;
+        line-height: 9px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+     .complexBar .btnyear .yearup {
+        background-position: -282px -445px;
+        margin-bottom: 2px;
+    }
+     .complexBar .btnyear .yeardown {
+        background-position: -242px -424px;
+    }
+     .simpleBar {
+        display: none;
+        height: 25px;
+        background-color: #e6e6e6;
+        background-position: 0 -176px;
+    }
+     .simpleBar .zmonth {
+        width: 12px;
+        height: 12px;
+        line-height: 12px;
+        padding: 6px 0 7px 0;
+    }
+     .simpleBar .prevMonth {
+        float: left;
+        padding-left: 30px;
+        margin-right: -45px;
+    }
+     .simpleBar .nextMonth {
+        float: right;
+        padding-right: 30px;
+        margin-left: -45px;
+    }
+     .simpleBar a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+    }
+     .simpleBar .prevMonth a {
+        background-position: 3px 2px;
+    }
+     .simpleBar .prevMonth a:hover {
+        background-position: 3px -22px;
+    }
+     .simpleBar .nextMonth a {
+        background-position: 3px -46px;
+    }
+     .simpleBar .nextMonth a:hover {
+        background-position: 3px -70px;
+    }
+     .simpleBar .ztip {
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        margin: 0 45px;
+        font-weight: bold;
+        text-align: center;
+    }
+     .tablewrap {
+        width: 161px;
+        padding: 0 15px 0 14px;
+        background: url("http://l.bst.126.net/rsc/img/calendar/bgline8.png") 0 27px no-repeat;
+    }
+     .table {
+        table-layout: auto;
+        width: 100%;
+    }
+     .zcnt {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+     .zcnt .wkitm,
+     .zcnt .itm {
+        float: left;
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+    }
+     .zcnt .wkitm {
+        padding: 4px 1px 4px 3px;
+        text-align: center;
+    }
+     .zcnt .itm {
+        padding: 2px;
+    }
+     .zcnt .itm .iday {
+        display: block;
+        width: 17px;
+        height: 17px;
+        background-color: #fff;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #FFF;
+        cursor: pointer;
+    }
+     .zcnt .itm .iday:hover {
+        color: #fff;
+        background-color: #4e9fd4;
+        border-color: #4e9fd4;
+    }
+     .zcnt .itm .iold {
+        color: #aaa;
+    }
+     .zcnt .itm .inext {
+        color: #aaa;
+    }
+     .zcnt .js-emptyitem {
+        visibility: hidden;
+    }
+     .zcnt .js-weekend .iday {
+        background-color: #fff;
+    }
+     .zcnt .js-zcurrent .iday {
+        color: #fff;
+        background-color: #4e9fd4;
+        border-color: #4e9fd4;
+    }
+     .zcnt .js-today .iday {
+        border-color: #4e9fd4;
+    }
+     .zcnt .js-disablepast .iday,
+     .zcnt .js-disablepast .iday:hover {
+        color: #aaa;
+        background-color: #fff;
+        border-color: #fff;
+        cursor: default;
+    }
+     .selectMonth {
+        color: #000;
+    }
+     .selectMonth .zlst {
+        max-height: 210px;
+    }
+     .selectMonth .zlst .wkitm {
+        height: 16px;
+        line-height: 16px;
+    }
+     {} .ztxt {
+        /*width:auto;*/
+        width: 5px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: -5px;
+    }
+     .zdwn {
+        margin: 13px 10px 12px 10px;
+    }
+     .zlst {
+        display: none;
+        left: -31px;
+        width: 190px;
+        max-height: none;
+        background: #fff;
+    }
+    .js-showlist .zlst {
+        display: block;
+    }
+     .zlst .case {
+        width: 190px;
+    }
+     .zlst .zitm {
+        padding: 0 10px 0 35px;
+        color: #444;
+    }
+     .zlst .zitm.js-timing-publish {
+        height: auto;
+        padding: 0;
+        overflow: visible;
+    }
+     .zlst .zitm.js-timing-publish:hover {
+        background-color: #fff;
+        color: #444;
+    }
+     .zlst .zitm.js-timing-publish label {
+        display: block;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 10px 0 35px;
+        color: #444;
+    }
+     .zlst .zitm.js-timing-publish label:hover {
+        color: #fff;
+        background-color: #999;
+    }
+     .zlst .zitm.js-timing-publish .publishDateTime {
+        display: none;
+        width: 190px;
+        margin-top: 7px;
+        font-size: 16px;
+        background: #fff url("/rsc/img/shadow-in.png") 0 0 no-repeat;
+    }
+     .zlst .zitm.js-timing-publish .publishDateTime {
+        border-style: solid;
+        border-color: #cbcbcb;
+        border-width: 1px 0;
+    }
+     .zlst .zitm.js-timing-publish .publishDate {
+        position: relative;
+        zoom: 1;
+        z-index: 8;
+        float: left;
+        width: 116px;
+    }
+     .zlst .zitm.js-timing-publish .publishDate .dateInput {
+        display: block;
+        width: 116px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 16px;
+        border: 0;
+        outline: none;
+    }
+     .zlst .zitm.js-timing-publish .publishTime {
+        position: relative;
+        zoom: 1;
+        z-index: 10;
+        float: right;
+        width: 72px;
+        height: 38px;
+        border-left: 1px solid #cbcbcb;
+    }
+     .zlst .zitm.js-timing-publish .timeInput {
+        overflow: hidden;
+        float: right;
+        /*width:67px;*/
+        width: 66px;
+        height: 38px;
+        line-height: 38px;
+        padding-right: 6px;
+        text-align: center;
+        font-size: 16px;
+        border: 0;
+        outline: none;
+    }
+     .zlst .zitm.js-timing-publish .publishDate .calendarWrap .newpublishcalendar {
+        position: static;
+        border-style: solid;
+        border-color: #cbcbcb;
+        border-width: 1px 0 0 0;
+    }
+     .zlst .zitm.js-timing-publish.js_selected_option .publishDateTime {
+        display: block;
+    }
+     {} .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .sitewrap {
+        padding-bottom: 1px;
+        margin: 0 -5px 0 -1px;
+    }
+     .sitewrap a {
+        float: left;
+        position: relative;
+        zoom: 1;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+        margin: 0 4px 8px 0;
+    }
+     .sitewrap em,
+     .sitewrap b {
+        background: url("http://l.bst.126.net/rsc/img/sitesyncmanager/siteicon24.png") 0 0 no-repeat;
+        _background: url("http://l.bst.126.net/rsc/img/sitesyncmanager/siteicon8.png") 0 0 no-repeat;
+    }
+     .sitewrap a em {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+     .sitewrap .site1 {
+        background-position: 1px 1px;
+    }
+     .sitewrap .js-sel .site1 {
+        background-position: 1px -102px;
+    }
+     .sitewrap .site2 {
+        background-position: -27px 1px;
+    }
+     .sitewrap .js-sel .site2 {
+        background-position: -27px -102px;
+    }
+     .sitewrap .site3 {
+        background-position: -55px 1px;
+    }
+     .sitewrap .js-sel .site3 {
+        background-position: -55px -102px;
+    }
+     .sitewrap .site6 {
+        background-position: -83px 1px;
+    }
+     .sitewrap .js-sel .site6 {
+        background-position: -83px -102px;
+    }
+     .sitewrap .site5 {
+        background-position: -111px 1px;
+    }
+     .sitewrap .js-sel .site5 {
+        background-position: -111px -102px;
+    }
+     .sitewrap .site4 {
+        background-position: -139px 1px;
+    }
+     .sitewrap .js-sel .site4 {
+        background-position: -139px -102px;
+    }
+     .sitewrap .site7 {
+        background-position: -167px 1px;
+    }
+     .sitewrap .js-sel .site7 {
+        background-position: -167px -102px;
+    }
+     .sitewrap .site8 {
+        background-position: 1px -31px;
+    }
+     .sitewrap .js-sel .site8 {
+        background-position: 1px -130px;
+    }
+     .sitewrap .site10 {
+        background-position: -27px -31px;
+    }
+     .sitewrap .js-sel .site10 {
+        background-position: -27px -130px;
+    }
+     .sitewrap .site11 {
+        background-position: -55px -31px;
+    }
+     .sitewrap .js-sel .site11 {
+        background-position: -55px -130px;
+    }
+     .sitewrap .syncmore {
+        background-position: -83px -31px;
+    }
+     .sitewrap .syncmore:hover {
+        background-position: -83px -130px;
+    }
+     .sitewrap b {
+        display: none;
+        position: absolute;
+        bottom: -3px;
+        right: -4px;
+        z-index: 5;
+        clear: both;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        background-position: 0 -72px;
+    }
+     .sitewrap .js-sel2 b {
+        display: block;
+    }
+    {
+        position: relative;
+        zoom: 1;
+        z-index: 12;
+        width: 60px;
+        height: 20px;
+        color: #444;
+        font-size: 12px;
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+    }
+    .clearfix {
+        zoom: 1;
+    }
+    .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+    .uploadCover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25px;
+        height: 20px;
+        visibility: hidden;
+        background: url("http://l.bst.126.net/rsc/img/empty.png") 0 0 repeat;
+    }
+     {
+        position: relative;
+        z-index: 100;
+        zoom: 1;
+        width: 674px;
+        color: #444;
+        font-size: 12px;
+    }
+     .pleft {
+        float: left;
+    }
+     .pright {
+        float: right;
+    }
+     .iblock {
+        display: -moz-inline-box;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+     .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .publishlayer .cCommonsArea {
+        height: 33px;
+    }
+     .publishlayer .siteSyncArea {
+        float: right;
+    }
+     .m-mlist .w-img a {
+        position: relative;
+        z-index: 10;
+    }
+     .m-mlist .w-img img {
+        position: relative;
+        z-index: 10;
+    }
+     .m-mlist .w-img .blogavatar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 64px;
+        height: 64px;
+        background-size: cover;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+     .m-mlist .w-img .blogavatar {
+        -webkit-transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+     .m-mlist .w-img .blogavatar {
+        transform: perspective(300px) rotateY(0deg);
+        -webkit-transform: perspective(300px) rotateY(0deg);
+        -moz-transform: perspective(300px) rotateY(0deg);
+        -o-transform: perspective(300px) rotateY(0deg);
+    }
+     .m-mlist .w-img .newblogavatar {
+        z-index: 0;
+        transform: perspective(300px) rotateY(180deg);
+        -webkit-transform: perspective(300px) rotateY(180deg);
+        -moz-transform: perspective(300px) rotateY(180deg);
+        -o-transform: perspective(300px) rotateY(180deg);
+    }
+     .m-mlist .w-img a.js-useblogavatar img {
+        visibility: hidden;
+    }
+     .m-mlist .w-img a.js-useblogavatar.js-animating .blogavatar {
+        transition: transform 0.3s linear, z-index 0.3s linear;
+        -webkit-transition: -webkit-transform 0.3s linear, z-index 0.3s linear;
+        -moz-transition: -moz-transform 0.3s linear, z-index 0.3s linear;
+        -o-transition: -o-transform 0.3s linear, z-index 0.3s linear;
+    }
+     .m-mlist .w-img a.js-useblogavatar.js-animating .blogavatar {
+        z-index: 0;
+        transform: perspective(300px) rotateY(180deg);
+        -webkit-transform: perspective(300px) rotateY(180deg);
+        -moz-transform: perspective(300px) rotateY(180deg);
+        -o-transform: perspective(300px) rotateY(180deg);
+    }
+     .m-mlist .w-img a.js-useblogavatar.js-animating .newblogavatar {
+        z-index: 1;
+        transform: perspective(300px) rotateY(360deg);
+        -webkit-transform: perspective(300px) rotateY(360deg);
+        -moz-transform: perspective(300px) rotateY(360deg);
+        -o-transform: perspective(300px) rotateY(360deg);
+    }
+     .actionBar .previewBtn {
+        float: right;
+    }
+     .actionBar .publishArea {
+        float: right;
+    }
+     .actionBar .publishBtn {
+        float: left;
+        overflow: hidden;
+    }
+     .actionBar .publishType {
+        float: left;
+    }
+     .m-mlist .mlistcnt .isay {
+        position: relative;
+    }
+     .m-mlist .mlistcnt .isay .overlayer {
+        display: none;
+        position: absolute;
+        left: 23px;
+        right: 2px;
+        top: 1px;
+        bottom: 3px;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.7);
+    }
+     {} .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .thide {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        word-break: keep-all;
+    }
+     .errmsg {
+        padding-bottom: 10px;
+        color: #E25151;
+    }
+     .imgwrap {
+        float: left;
+        width: 80px;
+        height: 44px;
+        padding-left: 20px;
+    }
+     .imgwrap img {
+        float: left;
+        width: 80px;
+        height: 44px;
+    }
+     .txtcode {
+        float: left;
+        text-align: center;
+        vertical-align: middle;
+        width: 106px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        border: 1px solid #C0C0C0;
+        background: url("http://l.bst.126.net/rsc/img/shadow-in.png") no-repeat scroll 0 0 #fff;
+    }
+     .changeimg {
+        float: left;
+        height: 44px;
+        line-height: 44px;
+        padding-left: 20px;
+        color: #5A8DCD;
+        cursor: pointer;
+    }
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .zhdl {
+        position: absolute;
+        width: 10px;
+        background: #0000cd;
+    }
+    .zmvr {
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #aaa;
+        background: #eee;
+    }
+    {
+        position: absolute;
+        top: 0;
+        left: -2px;
+    }
+    .zhdl {
+        position: absolute;
+        width: 9px;
+        min-height: 104px;
+        background: url("http://l.bst.126.net/rsc/img/newpublish/sortstub.png") 0px -2px no-repeat;
+    }
+    .zmvr {
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #aaa;
+        background: #eee;
+    }
+     {
+        position: absolute;
+        left: -138px;
+        top: 43px;
+    }
+     .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .editdescwrap {
+        width: 332px;
+        height: 74px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #c2c2c2;
+    }
+     .editdescwrap .nipple {
+        position: absolute;
+        top: -9px;
+        left: 180px;
+        width: 0;
+        height: 0;
+        border-width: 0 9px 9px 9px;
+        border-style: solid;
+        border-color: transparent transparent #c2c2c2;
+        /*border-color:transparent;*/
+        border-image: none;
+    }
+     .editdescwrap .nipple:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: -9px;
+        width: 0;
+        height: 0;
+        border-width: 0 9px 9px 9px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+        border-image: none;
+    }
+     .editdescwrap .desciptwrap {
+        margin-bottom: 10px;
+    }
+     .editdescwrap .descinput {
+        width: 310px;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 10px;
+        color: #999;
+        border: 1px solid #ededed;
+        outline: none;
+    }
+     .editdescwrap .updatedesc {
+        float: right;
+        width: 60px;
+        height: 26px;
+        background-position: -8px -912px;
+        color: #888;
+        border: none;
+        outline: none;
+    }
+     {
+        color: #444;
+        font-size: 12px;
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+    }
+     .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .photowrap {} .photowrap .photoList {
+        padding-bottom: 4px;
+        margin: -4px -10px 0 0;
+    }
+     .photowrap .addPhotoBar {
+        position: relative;
+        z-index: 1;
+        width: 500px;
+        height: 312px;
+        background: #fff url("http://l.bst.126.net/rsc/img/newpublish/firstaddbg.png") 0 0 no-repeat;
+    }
+     .photowrap .addPhotoBar:hover,
+     .photowrap .addPhotoBar.js-flashhover {
+        background-color: #f8f8f8;
+    }
+     .addPhotoBar .dropPhotoArea {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        bottom: -10px;
+        z-index: 15;
+    }
+     .addPhotoBar .dropPhotoArea .tipcover {
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 11;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+     .addPhotoBar .dropPhotoArea .tipmsg,
+     .addPhotoBar .dropPhotoArea .tiptxt {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        z-index: 12;
+        height: 70px;
+        line-height: 70px;
+        margin-top: -35px;
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+    }
+     .addPhotoBar .dropPhotoArea .tipmsg {
+        display: none;
+    }
+     .photowrap .addPhotoBar .flashwrap {
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /*opacity:0;*/
+        opacity: 0.001;
+    }
+     .photowrap .addPhotoBar .flashwrap object,
+     .photowrap .addPhotoBar .flashwrap embed {
+        /*opacity:0;*/
+        opacity: 0.001;
+    }
+     .photowrap .addPhotoBar .addbtn {
+        position: absolute;
+        left: 197px;
+        top: 135px;
+        z-index: 5;
+        width: 100px;
+        height: 80px;
+    }
+     .photowrap .addPhotoBar .addbtn .addicon {
+        width: 51px;
+        height: 43px;
+        /*margin:0 auto;*/
+        margin-left: 24px;
+        background-position: -2px -497px;
+    }
+     .photowrap .addPhotoBar .addbtn .addtext {
+        height: 35px;
+        line-height: 35px;
+        color: #aaa;
+        font-size: 14px;
+        text-align: center;
+    }
+     .photowrap .flashinfo {
+        display: none;
+        width: 500px;
+        height: 80px;
+        line-height: 80px;
+        background: #ededed;
+        opacity: 0.5;
+    }
+     .photowrap .flashinfo .infoicon {} .photowrap .flashinfo .infotext {
+        color: #666;
+        font-size: 13px;
+        text-align: center;
+    }
+     .photowrap .flashinfo .infotext a {
+        color: #333;
+    }
+     .photowrap .photoList .photoItem {
+        position: relative;
+        z-index: 100;
+        float: left;
+        width: 96px;
+        height: 96px;
+        padding: 4px 5px 0 0;
+    }
+     .photowrap .photoList .photoItem.js-photoitemhover {
+        z-index: 99999;
+    }
+     .photowrap .photoList .photoItem .itemWrap {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+    }
+     .photowrap .photoList .photoItem .move {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        z-index: 20;
+        width: 96px;
+        height: 66px;
+        cursor: move;
+        opacity: 0;
+    }
+     .photowrap.js-moreThanOnePhoto .photoList .photoItem .move {
+        display: block;
+    }
+     .photowrap .photoList .photoItem img {
+        display: block;
+        width: 96px;
+        height: 96px;
+    }
+     .photowrap .photoList .photoItem .uploadinfo {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 5;
+        width: 50px;
+        height: 50px;
+        margin: -25px 0 0 -25px;
+    }
+     .photowrap .photoList .photoItem .uploadinfo .infoicon {
+        width: 100%;
+        height: 100%;
+        background-position: -4px -690px;
+    }
+     .photowrap .photoList .photoItem .uploadinfo .infotext {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 60px;
+        height: 20px;
+        line-height: 20px;
+        margin: -10px 0 0 -30px;
+        color: #333;
+        font-size: 12px;
+        text-align: center;
+    }
+     .photowrap .photoList .photoItem .operatebar {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        height: 30px;
+        margin-left: -10px;
+    }
+     .photowrap .photoList .photoItem:hover .operatebar,
+     .photowrap .photoList .photoItem.js-photoitemhover .operatebar {
+        display: block;
+    }
+     .photowrap .photoList .photoItem .operatebar .operate {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-left: 3px;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+     .photowrap .photoList .photoItem .operatebar .imgdesc {
+        display: none;
+        text-indent: 0;
+        cursor: default;
+    }
+     .photowrap .photoList .photoItem .operatebar .imgdesc .editdesc {
+        float: right;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+     .photowrap .photoList .photoItem .operatebar .remove {
+        background-position: -1px -208px;
+    }
+     .photowrap .photoList .photoItem .operatebar .imgdesc .editdesc {
+        background-position: -1px -304px;
+    }
+     .photowrap .photoList .photoItem.js-hasimgdesc .operatebar .imgdesc .editdesc {
+        background-position: -69px -304px;
+    }
+     .photowrap .photoList .photoItem .operatebar .clockwise {
+        background-position: -1px -400px;
+    }
+     .photowrap .photoList .photoItem .sortcover {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 15;
+        width: 96px;
+        height: 96px;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+     .photowrap .photoList .photoItem.js-sortselected {} .photowrap .photoList .photoItem.js-sortselected .sortcover {
+        display: block;
+    }
+     .photowrap.js-singlePhoto {} .photowrap.js-singlePhoto .photoList .photoItem {
+        float: none;
+        width: 500px;
+        height: auto;
+        padding: 0;
+    }
+     .photowrap.js-singlePhoto .photoList .photoItem .itemWrap {
+        min-height: 30px;
+    }
+     .photowrap.js-singlePhoto .photoList .photoItem img {
+        width: auto;
+        height: auto;
+        max-width: 500px;
+        margin: 0 auto;
+        /*width:500px;height:auto;*/
+    }
+     .photowrap.js-singlePhoto .addPhotoBar,
+     .photowrap.js-moreThanOnePhoto .addPhotoBar {
+        height: 50px;
+        margin-top: 20px;
+        background: #fff url("http://l.bst.126.net/rsc/img/newpublish/goonaddbg.png") 0 0 no-repeat;
+    }
+     .photowrap.js-singlePhoto .addPhotoBar .addbtn,
+     .photowrap.js-moreThanOnePhoto .addPhotoBar .addbtn {
+        left: 210px;
+        top: 10px;
+        widh: 100px;
+        height: 30px;
+        line-height: 30px;
+    }
+     .photowrap.js-singlePhoto .addPhotoBar .addbtn .addicon,
+     .photowrap.js-moreThanOnePhoto .addPhotoBar .addbtn .addicon {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+        background-position: -1px -606px;
+    }
+     .photowrap.js-singlePhoto .addPhotoBar .addbtn .addtext,
+     .photowrap.js-moreThanOnePhoto .addPhotoBar .addbtn .addtext {
+        position: absolute;
+        left: 28px;
+        top: 0;
+        height: 30px;
+        line-height: 30px;
+    }
+     .photowrap.js-moreThanOnePhoto .photoItem .operatebar .imgdesc {
+        display: block;
+    }
+     .photowrap .photoItem.js-uploaderror .itemWrap,
+     .photowrap .photoItem.js-photouploading .itemWrap {
+        background-color: #f3f3f3;
+    }
+     .photowrap .photoItem.js-uploaderror .operatebar .imgdesc,
+     .photowrap .photoItem.js-uploaderror .operatebar .clockwise,
+     .photowrap .photoItem.js-photouploading .operatebar .imgdesc,
+     .photowrap .photoItem.js-photouploading .operatebar .clockwise {
+        display: none;
+    }
+     .photowrap .photoItem.js-photouploading .uploadinfo {
+        display: block;
+    }
+     .photowrap.js-singlePhoto .photoItem.js-uploaderror img,
+     .photowrap.js-singlePhoto .photoItem.js-photouploading img {
+        height: 312px;
+    }
+     .photowrap.js-singlePhoto .photoItem.js-photouploading .uploadinfo .infoicon {} .photowrap .photoItem.js-uploaderror .uploadinfo {
+        display: block;
+    }
+     .photowrap .photoItem.js-uploaderror .uploadinfo .infoicon {
+        background-position: 1px -803px;
+    }
+     .photowrap .photoItem.js-uploaderror .uploadinfo .infotext {
+        top: 58px;
+        opacity: 0.5;
+        font-size: 13px;
+    }
+     .photowrap.js-moreThanOnePhoto .photoList .photoItem .operatebar {
+        top: auto;
+        bottom: 0;
+    }
+     .photowrap.js-singlePhoto .photoList .photoItem .itemWrap {
+        max-height: 667px;
+        overflow: hidden;
+    }
+     .photowrap.js-singlePhoto .photoList .photoItem .itemWrap .hidepartimg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        width: 500px;
+        height: 60px;
+        line-height: 60px;
+        color: #ccc;
+        font-size: 16px;
+        text-align: center;
+        background: url("http://l.bst.126.net/rsc/img/newpublish/hidepartimg.png") 0 0 no-repeat;
+    }
+     .photowrap.js-moreThanOnePhoto .photoList .photoItem .itemWrap .hidepartimg {
+        visibility: hidden;
+    }
+     .photowrap.js-exceedMaxPhotoNum .addPhotoBar {
+        height: 0;
+        margin-bottom: -20px;
+        border: none;
+    }
+     .photowrap.js-exceedMaxPhotoNum .addPhotoBar .addbtn {
+        display: none;
+    }
+     .photowrap.js-exceedMaxPhotoNum .addPhotoBar .dropPhotoArea {
+        visibility: hidden;
+    }
+     .photowrap.js_isCitePost .addPhotoBar {
+        display: none;
+    }
+     .photowrap.js_isCitePost .photoList .photoItem .move {
+        display: none;
+    }
+     .photowrap.js_isCitePost .photoList .photoItem .itemWrap .operatebar,
+     .photowrap.js_isCitePost .photoList .photoItem:hover .itemWrap .operatebar,
+     .photowrap.js_isCitePost .photoList .photoItem.js-photoitemhover .itemWrap .operatebar {
+        display: none;
+    }
+     .photowrap .photoList.js-onsortdraging .photoItem .operatebar,
+     .photowrap .photoList.js-onsortdraging .photoItem:hover .operatebar,
+     .photowrap .photoList.js-onsortdraging .photoItem.js-photoitemhover .operatebar {
+        display: none;
+    }
+     .photowrap.js_isCitePost {
+        position: relative;
+        z-index: 100;
+    }
+     .photowrap.js_isCitePost .photoList .photoItem {
+        display: none;
+    }
+     .photowrap.js_isCitePost .photoList .photoItem:first-child {
+        display: block;
+    }
+     .photowrap.js_isCitePost .photoList .photoItem img {
+        width: 96px;
+        height: 96px;
+        margin: 0;
+        max-width: none;
+    }
+     .photowrap.js_isCitePost .photoList .photoItem .itemWrap .hidepartimg {
+        display: none;
+    }
+     .photowrap.js_isCitePost .totalphoto {
+        display: none;
+        position: absolute;
+        left: 71px;
+        top: 71px;
+        z-index: 120;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+     .photowrap.js_isCitePost .totalphoto .totalbg,
+     .photowrap.js_isCitePost .totalphoto .totalnum {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+     .photowrap.js_isCitePost .totalphoto .totalbg {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        background-position: -65px -313px;
+    }
+     .photowrap.js_isCitePost .totalphoto .totalnum {
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 10px;
+    }
+     .photowrap .addPhotoBar .addphotobarcover {
+        display: none;
+    }
+     .photowrap .photoList .photoItem .move {
+        opacity: 0.0001;
+        background: url("http://l.bst.126.net/rsc/img/empty.png") 0 0 repeat;
+    }
+     .photowrap.js-moreThanOnePhoto .photoList .photoItem .operatebar {
+        background: url("http://l.bst.126.net/rsc/img/empty.png") 0 0 repeat;
+    }
+    {
+        position: relative;
+        zoom: 1;
+        width: 100%;
+    }
+    .clearfix {
+        zoom: 1;
+    }
+    .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+    .thide {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        word-break: keep-all;
+    }
+    .musicResult {
+        width: 100%;
+    }
+    .musicResult .w-ttl {
+        position: relative;
+        zoom: 1;
+        padding-bottom: 10px;
+        font-weight: normal;
+    }
+    .musicResult .w-ttl small {
+        font-size: 12px;
+    }
+    .musicResult .inputListWrap {
+        position: relative;
+        zoom: 1;
+        border: 1px solid #C0C0C0;
+    }
+    .musicResult .srchInputWrap {
+        font-size: 16px;
+        background: url("http://l.bst.126.net/rsc/img/shadow-in.png") 0 0 no-repeat;
+    }
+    .musicResult .searchInput {
+        font-size: 24px;
+        height: 30px;
+        padding: 7px;
+        line-height: 30px;
+    }
+    .musicResult .searchInput {
+        width: 536px;
+        padding-left: 42px;
+        background: url("http://l.bst.126.net/rsc/img/icon2-8.png") no-repeat 999px 999px;
+        background-color: transparent;
+        background-position: 10px -520px;
+        border: none;
+        outline: none;
+    }
+    .musicResult .resultArea {
+        position: absolute;
+        left: -1px;
+        top: 44px;
+        width: 100%;
+        border: 1px solid #c0c0c0;
+        background-color: #fff;
+        box-shadow: 0px 22px 55px -30px rgba(0, 0, 0, .7);
+        -moz-box-shadow: 0px 22px 55px -30px rgba(0, 0, 0, .7);
+    }
+    .resultArea .musiclist {
+        font-size: 16px;
+    }
+    .musicfooter {
+        position: relative;
+        zoom: 1;
+        height: 29px;
+        border-bottom: 1px solid #fff;
+        text-align: right;
+        background: #ebebeb;
+        font-size: 12px;
+        line-height: 29px;
+    }
+    .musicinfo {
+        float: right;
+        width: 440px;
+        padding-left: 10px;
+        color: #777;
+    }
+    .musicpager {
+        float: left;
+        font-size: 14px;
+    }
+    .prevpage,
+    .nextpage {
+        float: left;
+        height: 19px;
+        line-height: 19px;
+        padding: 5px 10px;
+        color: #7594B3;
+        cursor: pointer;
+    }
+    .musicpager .sep {
+        float: left;
+        margin: 0 1px;
+    }
+    .musicpager a:hover {
+        color: #3366cc;
+    }
+    .musicPreview {
+        /*padding:15px;background-color:#eee;-moz-border-radius:5px 5px 5px 5px;*/
+    }
+    .rechoose {
+        position: relative;
+        zoom: 1;
+        z-index: 2;
+        float: right;
+        width: 16px;
+        height: 16px;
+        outline: none;
+        cursor: pointer;
+        background: url("http://l.bst.126.net/rsc/img/icon2-8.png") no-repeat 999px 999px;
+        overflow: hidden;
+        text-indent: -20000px;
+        background-position: 0 0;
+    }
+    .previewImg {
+        float: left;
+        max-width: 150px;
+        padding-right: 20px;
+        _width: 150px;
+    }
+    .musicitm {
+        display: block;
+        width: 560px;
+        height: 24px;
+        line-height: 24px;
+        padding: 5px 10px;
+        cursor: pointer;
+        background: url("http://l.bst.126.net/rsc/img/x.png") repeat-x 999px 9999px;
+    }
+    .musicitm:hover {
+        color: #fff;
+        /*color:#fff;text-decoration:none;background-position:0 0;*/
+    }
+    .js-itmhoverbg {
+        color: #fff;
+        text-decoration: none;
+        background-position: 0 0;
+    }
+    .musicitm .artist,
+    .musicitm .album {
+        color: #777;
+    }
+    .musicitm .musicsep {
+        margin: 0 15px;
+        color: #777;
+    }
+    .js-itmhoverbg .artist,
+    .js-itmhoverbg .album,
+    .js-itmhoverbg .musicsep {
+        color: #fff;
+    }
+    .embedWrap {
+        position: relative;
+        zoom: 1;
+        z-index: 1;
+    }
+    .flashLink {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+    }
+    .musicinfo a {
+        color: #7594B3;
+    }
+    .musicinfo a:hover {
+        color: #3366cc;
+    }
+     {
+        position: relative;
+        zoom: 1;
+        width: 100%;
+    }
+     .pleft {
+        float: left;
+    }
+     .pright {
+        float: right;
+    }
+     .clearfix {
+        zoom: 1;
+    }
+     .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+     .addDiyMusic {
+        position: relative;
+        zoom: 1;
+        z-index: 1;
+        width: 100%;
+        height: 30px;
+    }
+     .addDiyMusic .flashwrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+     .addDiyMusic .addMusicBtn {
+        width: 88px;
+        height: 30px;
+        line-height: 30px;
+        text-decoration: none;
+        background: url("http://l.bst.126.net/rsc/img/btn.png") no-repeat 0 -280px;
+    }
+     .addDiyMusic .js-hover-addMusicBtn {
+        background-position: -98px -280px;
+    }
+     .addDiyMusic .addMusicBtn span {
+        display: block;
+        padding-left: 28px;
+        color: #fff;
+        text-align: left;
+        background: url("http://l.bst.126.net/rsc/img/icon2-8.png") no-repeat 10px -339px;
+    }
+     .addDiyMusic .prompt {
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        color: #777;
+    }
+     .js-hideflash {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        border: none;
+        margin: 0;
+    }
+     .js-hideflash .flashwrap {} .js-hideflash .addMusicBtn {
+        display: none;
+    }
+     .js-hideflash .prompt {
+        display: none;
+    }
+     .musicPreview {
+        position: relative;
+        zoom: 1;
+        left: 0;
+        top: 1;
+        z-index: 10;
+        min-height: 33px;
+        _height: 33px;
+        /*line-height:22px;padding:10px;background-color:#ebebeb;*/
+    }
+     .musicPreview .uploadingWrap {
+        padding: 12px 0 15px 0;
+    }
+     .musicPreview .uploading {
+        height: 15px;
+        padding: 1px 0 0 21px;
+        white-space: normal;
+        line-height: 15px;
+        color: #aaa;
+        background: url("http://l.bst.126.net/rsc/img/loading.gif") no-repeat 0 -44px;
+    }
+     .rechoose {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        outline: none;
+        cursor: pointer;
+        overflow: hidden;
+        text-indent: -20000px;
+        background: url("http://l.bst.126.net/rsc/img/icon2-8.png") no-repeat 0 0;
+    }
+     .coverWrap {
+        margin-right: -184px;
+    }
+     .coverImg {
+        float: left;
+        width: 164px;
+        height: 164px;
+    }
+     .musicembed {
+        margin-left: 184px;
+    }
+     .musicPreview a {
+        color: #5A8DCD;
+    }
+     .musicPreview a:hover {
+        color: #7594b3;
+        text-decoration: none;
+    }
+     .previewWithoutCover .uploadCover {
+        margin: 15px 0 0 15px;
+    }
+     .previewWithCover .embedWrap2 {
+        margin-bottom: 10px;
+    }
+     .previewWithCover .reUploadCover {
+        height: 24px;
+        overflow: hidden;
+    }
+     .previewWithCover .deleteCover {
+        height: 22px;
+        line-height: 22px;
+    }
+     .embedWrap1,
+     .embedWrap2 {
+        position: relative;
+        zoom: 1;
+    }
+     .embedWrap1 .flashLink,
+     .embedWrap2 .flashLink {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+    }
+    {
+        position: relative;
+        zoom: 1;
+        z-index: 22;
+        width: 100%;
+        color: #444;
+        font-size: 12px;
+        font-family: "Hiragino Sans GB", arial, Microsoft YaHei, 微软雅黑, simsun, 宋体;
+    }
+    .clearfix {
+        zoom: 1;
+    }
+    .clearfix:after {
+        clear: both;
+        content: '.';
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+    {}.iblock {
+        display: -moz-inline-box;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+    .videoarea {
+        height: 61px;
+        overflow: hidden;
+    }
+    .videoarea .vsearch {
+        padding: 10px;
+        background: #ededed;
+    }
+    .videoarea .vsearch .vsearchwrap {
+        position: relative;
+        border: 1px solid #dfdfdf;
+    }
+    .videoarea .vsearch input {
+        position: relative;
+        z-index: 10;
+        width: 458px;
+        height: 30px;
+        line-height: 30px;
+        padding: 4px 10px;
+        margin: 0;
+        color: #333;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+        background: url(http://l.bst.126.net/rsc/img/common/empty.png) 0 0 repeat;
+        outline: none;
+    }
+    .videoarea .vsearch label {
+        position: absolute;
+        left: 12px;
+        top: 0;
+        z-index: 5;
+        line-height: 40px;
+        line-height: 40px;
+        color: #ccc;
+        font-size: 14px;
+    }
+    .videoarea .searchinfo {
+        visiblility: hidden;
+        position: relative;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .videoarea .searchinfo .infoicon {
+        position: absolute;
+        left: 220px;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .videoarea .searchinfo .infotext {
+        height: 26px;
+        line-height: 26px;
+        padding: 50px 20px 4px 0;
+        color: #333;
+        text-align: center;
+        background: #ededed;
+        opacity: 0.5;
+    }
+    .videoarea .videoshow {
+        position: relative;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .videoarea .videoshow .videowrap {}.videoarea .videoshow .rechoose {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+        background-position: -1px -208px;
+        cursor: pointer;
+    }
+    .videoarea.js-searching,
+    .videoarea.js-addrerror {
+        height: 141px;
+    }
+    .videoarea.js-searching .searchinfo {
+        visibility: visible;
+        height: 80px;
+        opacity: 1;
+    }
+    .videoarea.js-searching .searchinfo .infoicon {
+        background-position: 0 -102px;
+    }
+    .videoarea.js-addrerror .searchinfo {
+        visibility: visible;
+        height: 80px;
+        opacity: 1;
+    }
+    .videoarea.js-addrerror .searchinfo .infoicon {
+        background-position: 0 0;
+    }
+    .videoarea.js-showvideo {
+        height: 305px;
+    }
+    .videoarea.js-showvideo .searchinfo,
+    .videoarea.js-showvideo .vsearch {
+        display: none;
+    }
+    .videoarea.js-showvideo .videoshow {
+        visibility: visible;
+        height: 305px;
+        opacity: 1;
+    }

@@ -1,0 +1,263 @@
+.footer{
+	text-align: center;
+	line-height: 25px;
+	font-family: "微软雅黑", arial;
+	font-size: 16px;
+	margin-bottom: 20px;
+	height: 60px;
+	width: 100%;
+	color: #74808b;
+}
+
+.userContent{
+	width: 68%;
+	height: 800px;
+
+	margin-top: 110px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #fff;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+	border-top: 1px solid #D4D4D5;
+
+	font-family: "微软雅黑", arial;
+	color: #444;
+}
+
+.box1{
+	height: 46px;
+	padding: 26px 30px 16px;
+	border-bottom: 1px solid #ebebeb;
+	margin: 0;
+	font-size: 30px;
+}
+
+.userContent .leftSide{
+	width: 20%;
+	padding: 26px 30px 16px;
+	float: left;
+}
+
+/**************************左侧菜单信息******************/
+.leftSide .List{
+	border-bottom: 2px solid #ebebeb;
+	margin-bottom: 20px;
+}
+
+.List .listTitle{
+	height: 25px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.listTitle #privacyIcon{
+	background-image: url("/img/SettingIcon.png");
+	background-position: -326px 0;
+	width: 20px;
+	height: 16px;
+	margin-top: 4px;
+	float: left;
+}
+
+.listTitle #infoIcon{
+	background-image: url("/img/SettingIcon.png");
+	background-position: -347px 0;
+	width: 20px;
+	height: 16px;
+	margin-top: 4px;
+	float: left;
+}
+
+.listTitle .listTitleText{
+	height: 100%;
+	margin-left: 25px;
+	font-weight: bold;
+}
+
+.List .listOption{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 20px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.List .listOptionText{
+	margin-left: 30px;
+	height: 100%;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.List .listOption:hover{
+	background: #f2f2f2;
+}
+
+.listOn{
+	background: #f2f2f2;
+}
+
+/***********************右侧信息设置内容*****************/
+.userContent .rightSide{
+	width: 74%;
+	margin-left: 23%;
+	padding-left: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.rightSide .List{
+	height: 25px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.List .box2{
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+/*********************保存****************************/
+.m-button{
+	margin-top: 60px;
+	cursor: pointer;
+	background: #8db800;
+	display: inline-block;
+	border: 0;
+	width: 200px;
+	height: 40px;
+
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+
+	margin-left: 25px;
+}
+
+.m-button:hover{
+	background: #aed505;
+}
+
+
+.warn{
+	margin-top: 5px;
+	height: 30px;
+	width: 300px;
+	font-size: 14px;
+}
+
+.wrongIcon{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin: 0 4px 0 0;
+	background: url("/img/btn.png") no-repeat -353px -783px;
+}
+
+/***************************头像图片********************/
+#userImage #userImageBox{
+	width: 100%;
+	height: 350px;
+	padding: 0px;
+	margin-top: 25px;
+}
+
+#userImageBox .bigImage{
+	width: 446px;
+	height: 349px;
+	border: 1px solid #ebebeb;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+	margin-left: 10px;
+	float: left;
+	background: #f3f3f3;
+}
+
+.bigImage .add{
+	height: 50px;
+	width: 160px;
+	background: #5f5f5f;
+	border-radius: 3px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 130px;
+	cursor: pointer;
+}
+
+.bigImage .add:hover{
+	background: #cbcbcb
+}
+
+.bigImage .add b{
+	font-size: 25px;
+	font-family: "微软雅黑";
+	color: #fff;
+	margin-left: 23px;
+}
+
+.bigImage .add span{
+	font-size: 20px;
+	line-height: 50px;
+	color: #fff;
+	margin-left: 5px;
+}
+
+#userImageBox .maskImage{
+	width: 115px;
+	padding: 0px;
+	height: 349px;
+	float: right;
+	margin-right: 60px;
+
+	font-size: 12px;
+	font-family: "微软雅黑";
+	line-height: 20px;
+	color: #888888;
+}
+
+.maskImage .midImage{
+	width: 110px;
+	height: 110px;
+	border: 1px solid #ebebeb;
+	margin-top: 20px;
+	background-image: url("/img/UserPortrait/default.jpg");
+	background-size: cover;
+}
+
+.maskImage .smallImage{
+	width: 64px;
+	height: 64px;
+	border: 1px solid #ebebeb;
+	margin-top: 20px;
+	background-image: url("/img/UserPortrait/default.jpg");
+	background-size: cover;
+}
+
+.maskImage .hintText2{
+	color: #aaaaaa;
+	font-size: 12px;
+	height: 20px;
+	line-height: 18px;
+}
+
+.maskImage #saveUserImage{
+	width: 110px;
+	margin-left: 0px;
+	margin-top: 22px;
+	width: 90px;
+	height: 30px; 
+
+	cursor: pointer;
+	background: #8db800;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
