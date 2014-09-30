@@ -1,4 +1,4 @@
-http://23333.github.io/LifeGame
+http://zbww.github.io/LifeGame
 ===============================
 
 操作说明:
